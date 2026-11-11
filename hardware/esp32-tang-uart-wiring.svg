@@ -1,0 +1,343 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="1480" viewBox="0 0 1640 1480">
+<rect width="1640" height="1480" fill="#ffffff"/>
+<text x="40" y="46" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" font-weight="bold" fill="#111" text-anchor="start" dominant-baseline="central">ESP32 (приёмник) ↔ Tang Nano 9K — отдельный UART</text>
+<text x="40" y="82" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" font-weight="normal" fill="#444" text-anchor="start" dominant-baseline="central">Вид со стороны пайки: обе платы перевёрнуты. Пады в масштабе, шаг 2,54 мм.</text>
+<text x="40" y="106" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" font-weight="normal" fill="#444" text-anchor="start" dominant-baseline="central">Цифра в кружке — номер пада по порядку от верхнего края платы; рядом — подпись пина, как на плате.</text>
+<rect x="276" y="262" width="408" height="1082" rx="12" fill="#efefef" stroke="#444" stroke-width="2.5"/>
+<rect x="281" y="281" width="38" height="958" rx="4" fill="none" stroke="#a5a5a5" stroke-width="1.5"/>
+<rect x="641" y="281" width="38" height="958" rx="4" fill="none" stroke="#a5a5a5" stroke-width="1.5"/>
+<rect x="358" y="228" width="250" height="274" rx="6" fill="#dcdde0" stroke="#8b8f94" stroke-width="2"/>
+<rect x="372" y="228" width="222" height="22" fill="#c8cace" stroke="#8b8f94" stroke-width="1"/>
+<text x="480" y="372" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#555" text-anchor="middle" dominant-baseline="central">слот microSD</text>
+<text x="480" y="394" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" fill="#666" text-anchor="middle" dominant-baseline="central">(на этой стороне)</text>
+<rect x="378" y="1292" width="198" height="52" fill="none" stroke="#8b8f94" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="378" y="1340" width="198" height="36" rx="3" fill="#dcdde0" stroke="#8b8f94" stroke-width="2"/>
+<text x="477" y="1358" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#555" text-anchor="middle" dominant-baseline="central">HDMI</text>
+<circle cx="331" cy="1317" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="5"/>
+<circle cx="639" cy="1317" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="5"/>
+<text x="480" y="830" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="42" font-weight="bold" fill="#d2d2d2" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 480 830)" letter-spacing="3">TANG NANO 9K</text>
+<text x="300" y="1262" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#666" text-anchor="middle" dominant-baseline="central">J6</text>
+<text x="660" y="1262" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#666" text-anchor="middle" dominant-baseline="central">J5</text>
+<text x="480" y="190" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#111" text-anchor="middle" dominant-baseline="central">Tang Nano 9K · обратная сторона</text>
+<text x="480" y="211" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#555" text-anchor="middle" dominant-baseline="central">▲ край USB-C / microSD — счёт пинов отсюда</text>
+<polygon points="1076,192 1484,192 1520,228 1520,696 1490,710 1490,800 1040,800 1040,228" fill="#e6f0fb" stroke="#2b6cb0" stroke-width="2.5"/>
+<rect x="1148" y="284" width="264" height="292" rx="4" fill="none" stroke="#9db7d6" stroke-width="1.5" stroke-dasharray="7 5"/>
+<rect x="1148" y="198" width="264" height="86" fill="none" stroke="#9db7d6" stroke-width="1.5" stroke-dasharray="3 4"/>
+<text x="1280" y="241" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#6f8db3" text-anchor="middle" dominant-baseline="central">антенна (на лицевой стороне)</text>
+<text x="1280" y="372" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#6f8db3" text-anchor="middle" dominant-baseline="central">модуль ESP-WROOM-32</text>
+<text x="1280" y="392" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#6f8db3" text-anchor="middle" dominant-baseline="central">(на лицевой стороне)</text>
+<rect x="1222" y="752" width="124" height="48" fill="none" stroke="#8b8f94" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="1222" y="796" width="124" height="18" rx="3" fill="#dcdde0" stroke="#8b8f94" stroke-width="2"/>
+<text x="1284" y="776" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" fill="#555" text-anchor="middle" dominant-baseline="central">micro-USB</text>
+<text x="1284" y="832" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#555" text-anchor="middle" dominant-baseline="central">▼ micro-USB — питание ESP32</text>
+<rect x="1472" y="718" width="40" height="90" rx="4" fill="#f7f7f7" stroke="#777" stroke-width="2"/>
+<rect x="1512" y="744" width="12" height="30" rx="2" fill="#555"/>
+<text x="1462" y="758" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#2b6cb0" text-anchor="end" dominant-baseline="central">кнопка RST</text>
+<text x="1060" y="252" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#2b6cb0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 1060 252)">внешний</text>
+<text x="1100" y="246" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#2b6cb0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 1100 246)">внутренний</text>
+<text x="1280" y="146" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#111" text-anchor="middle" dominant-baseline="central">ESP32 MiniKit (приёмник) · обратная сторона</text>
+<text x="1280" y="168" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#555" text-anchor="middle" dominant-baseline="central">▲ край с антенной — счёт пинов отсюда</text>
+<polyline points="1091.51,491.515 1080,480 990,480 970,500 673,500" fill="none" stroke="#ffffff" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1091.51,491.515 1080,480 990,480 970,500 673,500" fill="none" stroke="#169443" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1091.51,451.515 1080,440 990,440 890,540 673,540" fill="none" stroke="#ffffff" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1091.51,451.515 1080,440 990,440 890,540 673,540" fill="none" stroke="#1f5fd0" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1091.51,531.515 1080,520 990,520 930,580 760,580 760,1416 236,1416 236,1180 287,1180" fill="none" stroke="#ffffff" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1091.51,531.515 1080,520 990,520 930,580 760,580 760,1416 236,1416 236,1180 287,1180" fill="none" stroke="#111111" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1088,491.5 1071,483.85 1071,499.15" fill="#169443"/>
+<polygon points="689,540 707,532.35 707,547.65" fill="#1f5fd0"/>
+<text x="818.5" y="485" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#169443" text-anchor="middle" dominant-baseline="central">Tang 26 (TX) → ESP32 IO16 (RX)</text>
+<text x="818.5" y="525" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1f5fd0" text-anchor="middle" dominant-baseline="central">Tang 27 (RX) ← ESP32 IO17 (TX)</text>
+<text x="480" y="1398" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#111111" text-anchor="middle" dominant-baseline="central">GND ↔ GND — общая земля</text>
+<text x="776" y="878" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#111111" text-anchor="middle" dominant-baseline="central" transform="rotate(90 776 878)">GND → в левый ряд Tang, 23-й пад</text>
+<rect x="288" y="288" width="24" height="24" rx="2" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="300.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="321" y="300" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">63</text>
+<circle cx="300" cy="340" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="340.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">2</text>
+<text x="321" y="340" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">86</text>
+<circle cx="300" cy="380" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="380.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">3</text>
+<text x="321" y="380" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">85</text>
+<circle cx="300" cy="420" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="420.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="321" y="420" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">84</text>
+<circle cx="300" cy="460" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="460.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="321" y="460" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">83</text>
+<circle cx="300" cy="500" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="500.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="321" y="500" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">82</text>
+<circle cx="300" cy="540" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="540.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="321" y="540" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">81</text>
+<circle cx="300" cy="580" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="580.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="321" y="580" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">80</text>
+<circle cx="300" cy="620" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="620.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="321" y="620" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">79</text>
+<circle cx="300" cy="660" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="660.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">10</text>
+<text x="321" y="660" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">77</text>
+<circle cx="300" cy="700" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="700.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">11</text>
+<text x="321" y="700" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">76</text>
+<circle cx="300" cy="740" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="740.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">12</text>
+<text x="321" y="740" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">75</text>
+<circle cx="300" cy="780" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="780.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">13</text>
+<text x="321" y="780" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">74</text>
+<circle cx="300" cy="820" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="820.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">14</text>
+<text x="321" y="820" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">73</text>
+<circle cx="300" cy="860" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="860.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">15</text>
+<text x="321" y="860" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">72</text>
+<circle cx="300" cy="900" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="900.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">16</text>
+<text x="321" y="900" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">71</text>
+<circle cx="300" cy="940" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="940.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">17</text>
+<text x="321" y="940" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">70</text>
+<circle cx="300" cy="980" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="980.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">18</text>
+<text x="321" y="980" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#d0312d" text-anchor="start" dominant-baseline="central">5V</text>
+<circle cx="300" cy="1020" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="1020.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">19</text>
+<text x="321" y="1020" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">48</text>
+<circle cx="300" cy="1060" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="1060.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">20</text>
+<text x="321" y="1060" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">49</text>
+<circle cx="300" cy="1100" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="1100.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">21</text>
+<text x="321" y="1100" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">31</text>
+<circle cx="300" cy="1140" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="1140.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">22</text>
+<text x="321" y="1140" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">32</text>
+<circle cx="300" cy="1180" r="12" fill="#e2e2e2" stroke="#111111" stroke-width="5"/>
+<text x="300" y="1180.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#000" text-anchor="middle" dominant-baseline="central">23</text>
+<text x="321" y="1180" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#111111" text-anchor="start" dominant-baseline="central">GND</text>
+<circle cx="300" cy="1220" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="300" y="1220.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">24</text>
+<text x="321" y="1220" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#d0312d" text-anchor="start" dominant-baseline="central">3V3</text>
+<rect x="648" y="288" width="24" height="24" rx="2" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="300.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="639" y="300" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">38</text>
+<circle cx="660" cy="340" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="340.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">2</text>
+<text x="639" y="340" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">37</text>
+<circle cx="660" cy="380" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="380.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">3</text>
+<text x="639" y="380" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">36</text>
+<circle cx="660" cy="420" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="420.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="639" y="420" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">39</text>
+<circle cx="660" cy="460" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="460.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="639" y="460" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">25</text>
+<circle cx="660" cy="500" r="12" fill="#dcf2e3" stroke="#169443" stroke-width="5"/>
+<text x="660" y="500.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#000" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="639" y="500" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#169443" text-anchor="end" dominant-baseline="central">26</text>
+<circle cx="660" cy="540" r="12" fill="#e0e9fb" stroke="#1f5fd0" stroke-width="5"/>
+<text x="660" y="540.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#000" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="639" y="540" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#1f5fd0" text-anchor="end" dominant-baseline="central">27</text>
+<circle cx="660" cy="580" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="580.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="639" y="580" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">28</text>
+<circle cx="660" cy="620" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="620.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="639" y="620" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">29</text>
+<circle cx="660" cy="660" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="660.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">10</text>
+<text x="639" y="660" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">30</text>
+<circle cx="660" cy="700" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="700.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">11</text>
+<text x="639" y="700" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">33</text>
+<circle cx="660" cy="740" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="740.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">12</text>
+<text x="639" y="740" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">34</text>
+<circle cx="660" cy="780" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="780.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">13</text>
+<text x="639" y="780" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">40</text>
+<circle cx="660" cy="820" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="820.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">14</text>
+<text x="639" y="820" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">35</text>
+<circle cx="660" cy="860" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="860.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">15</text>
+<text x="639" y="860" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">41</text>
+<circle cx="660" cy="900" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="900.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">16</text>
+<text x="639" y="900" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">42</text>
+<circle cx="660" cy="940" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="940.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">17</text>
+<text x="639" y="940" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">51</text>
+<circle cx="660" cy="980" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="980.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">18</text>
+<text x="639" y="980" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">53</text>
+<circle cx="660" cy="1020" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="1020.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">19</text>
+<text x="639" y="1020" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">54</text>
+<circle cx="660" cy="1060" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="1060.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">20</text>
+<text x="639" y="1060" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">55</text>
+<circle cx="660" cy="1100" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="1100.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">21</text>
+<text x="639" y="1100" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">56</text>
+<circle cx="660" cy="1140" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="1140.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">22</text>
+<text x="639" y="1140" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">57</text>
+<circle cx="660" cy="1180" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="1180.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">23</text>
+<text x="639" y="1180" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">68</text>
+<circle cx="660" cy="1220" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="660" y="1220.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">24</text>
+<text x="639" y="1220" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">69</text>
+<circle cx="1060" cy="300" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1060" y="300.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="1038" y="300" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">GND</text>
+<circle cx="1100" cy="300" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1100" y="300.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="1122" y="300" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">TXD</text>
+<circle cx="1460" cy="300" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1460" y="300.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="1438" y="300" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">RST</text>
+<circle cx="1500" cy="300" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1500" y="300.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="1522" y="300" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">GND</text>
+<circle cx="1060" cy="340" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1060" y="340.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">2</text>
+<text x="1038" y="340" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">IO27</text>
+<circle cx="1100" cy="340" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1100" y="340.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">2</text>
+<text x="1122" y="340" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">RXD</text>
+<circle cx="1460" cy="340" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1460" y="340.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">2</text>
+<text x="1438" y="340" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">SVP</text>
+<circle cx="1500" cy="340" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1500" y="340.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">2</text>
+<text x="1522" y="340" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">NC</text>
+<circle cx="1060" cy="380" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1060" y="380.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">3</text>
+<text x="1038" y="380" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">IO25</text>
+<circle cx="1100" cy="380" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1100" y="380.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">3</text>
+<text x="1122" y="380" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">IO22</text>
+<circle cx="1460" cy="380" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1460" y="380.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">3</text>
+<text x="1438" y="380" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">IO26</text>
+<circle cx="1500" cy="380" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1500" y="380.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">3</text>
+<text x="1522" y="380" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">SVN</text>
+<circle cx="1060" cy="420" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1060" y="420.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="1038" y="420" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">IO32</text>
+<circle cx="1100" cy="420" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1100" y="420.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="1122" y="420" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">IO21</text>
+<circle cx="1460" cy="420" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1460" y="420.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="1438" y="420" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">IO18</text>
+<circle cx="1500" cy="420" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1500" y="420.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="1522" y="420" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">IO35</text>
+<circle cx="1060" cy="460" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1060" y="460.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="1038" y="460" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">TDI</text>
+<circle cx="1100" cy="460" r="12" fill="#e0e9fb" stroke="#1f5fd0" stroke-width="5"/>
+<text x="1100" y="460.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#000" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="1122" y="460" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#1f5fd0" text-anchor="start" dominant-baseline="central">IO17</text>
+<circle cx="1460" cy="460" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1460" y="460.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="1438" y="460" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">IO19</text>
+<circle cx="1500" cy="460" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1500" y="460.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="1522" y="460" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">IO33</text>
+<circle cx="1060" cy="500" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1060" y="500.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="1038" y="500" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">IO4</text>
+<circle cx="1100" cy="500" r="12" fill="#dcf2e3" stroke="#169443" stroke-width="5"/>
+<text x="1100" y="500.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#000" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="1122" y="500" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#169443" text-anchor="start" dominant-baseline="central">IO16</text>
+<circle cx="1460" cy="500" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1460" y="500.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="1438" y="500" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">IO23</text>
+<circle cx="1500" cy="500" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1500" y="500.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="1522" y="500" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">IO34</text>
+<circle cx="1060" cy="540" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1060" y="540.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="1038" y="540" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">IO0</text>
+<circle cx="1100" cy="540" r="12" fill="#e2e2e2" stroke="#111111" stroke-width="5"/>
+<text x="1100" y="540.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#000" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="1122" y="540" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#111111" text-anchor="start" dominant-baseline="central">GND</text>
+<circle cx="1460" cy="540" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1460" y="540.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="1438" y="540" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">IO5</text>
+<circle cx="1500" cy="540" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1500" y="540.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="1522" y="540" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">TMS</text>
+<circle cx="1060" cy="580" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1060" y="580.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="1038" y="580" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">IO2</text>
+<circle cx="1100" cy="580" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1100" y="580.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="1122" y="580" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#d0312d" text-anchor="start" dominant-baseline="central">VCC</text>
+<circle cx="1460" cy="580" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1460" y="580.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="1438" y="580" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#d0312d" text-anchor="end" dominant-baseline="central">3V3</text>
+<circle cx="1500" cy="580" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1500" y="580.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">8</text>
+<text x="1522" y="580" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">NC</text>
+<circle cx="1060" cy="620" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1060" y="620.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="1038" y="620" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">SD1</text>
+<circle cx="1100" cy="620" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1100" y="620.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="1122" y="620" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">TDO</text>
+<circle cx="1460" cy="620" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1460" y="620.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="1438" y="620" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">TCK</text>
+<circle cx="1500" cy="620" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1500" y="620.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">9</text>
+<text x="1522" y="620" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">SD2</text>
+<circle cx="1060" cy="660" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1060" y="660.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">10</text>
+<text x="1038" y="660" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">CLK</text>
+<circle cx="1100" cy="660" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1100" y="660.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">10</text>
+<text x="1122" y="660" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">SD0</text>
+<circle cx="1460" cy="660" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1460" y="660.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">10</text>
+<text x="1438" y="660" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="end" dominant-baseline="central">SD3</text>
+<circle cx="1500" cy="660" r="12" fill="#ffffff" stroke="#c39a2f" stroke-width="3"/>
+<text x="1500" y="660.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" fill="#8a8a8a" text-anchor="middle" dominant-baseline="central">10</text>
+<text x="1522" y="660" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" fill="#2a2a2a" text-anchor="start" dominant-baseline="central">CMD</text>
+<text x="1166" y="460" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#1f5fd0" text-anchor="start" dominant-baseline="central" stroke="#e6f0fb" stroke-width="5" stroke-linejoin="round" paint-order="stroke">← 5-й: IO17 = RX</text>
+<text x="1166" y="500" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#169443" text-anchor="start" dominant-baseline="central" stroke="#e6f0fb" stroke-width="5" stroke-linejoin="round" paint-order="stroke">← 6-й: IO16 = TX</text>
+<text x="1166" y="540" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#111111" text-anchor="start" dominant-baseline="central" stroke="#e6f0fb" stroke-width="5" stroke-linejoin="round" paint-order="stroke">← 7-й: GND</text>
+<text x="1166" y="580" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#d0312d" text-anchor="start" dominant-baseline="central" stroke="#e6f0fb" stroke-width="5" stroke-linejoin="round" paint-order="stroke">← 8-й: VCC 5 В — НЕ паять</text>
+<text x="262" y="980" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#d0312d" text-anchor="end" dominant-baseline="central">18-й = 5V — НЕ паять</text>
+<text x="224" y="1180" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#111111" text-anchor="end" dominant-baseline="central">23-й = GND</text>
+<text x="224" y="1220" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#d0312d" text-anchor="end" dominant-baseline="central">24-й = 3V3 — НЕ паять</text>
+<rect x="800" y="868" width="810" height="566" rx="12" fill="#fafafa" stroke="#d0d0d0" stroke-width="1.5"/>
+<text x="824" y="902" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="19" font-weight="bold" fill="#111" text-anchor="start" dominant-baseline="central">Провода</text>
+<line x1="824" y1="940" x2="880" y2="940" stroke="#169443" stroke-width="6" stroke-linecap="round"/>
+<text x="896" y="940" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#222" dominant-baseline="central"><tspan font-weight="bold" fill="#169443">UART ESP32 → Tang:</tspan><tspan font-weight="normal" fill="#222"> IO16 (TX) → 26 (RX), правый ряд J5, 6-й пад</tspan></text>
+<line x1="824" y1="974" x2="880" y2="974" stroke="#1f5fd0" stroke-width="6" stroke-linecap="round"/>
+<text x="896" y="974" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#222" dominant-baseline="central"><tspan font-weight="bold" fill="#1f5fd0">UART Tang → ESP32:</tspan><tspan font-weight="normal" fill="#222"> 27 (TX), правый ряд J5, 7-й пад → IO17 (RX)</tspan></text>
+<line x1="824" y1="1008" x2="880" y2="1008" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+<text x="896" y="1008" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#222" dominant-baseline="central"><tspan font-weight="bold" fill="#111111">GND, общая земля:</tspan><tspan font-weight="normal" fill="#222"> GND ESP32 (7-й) ↔ GND Tang (левый ряд J6, 23-й)</tspan></text>
+<text x="824" y="1042" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="normal" fill="#444" text-anchor="start" dominant-baseline="central">Логика 3,3 В · 115200 бод · 8N1 · TX одной платы идёт на RX другой</text>
+<text x="824" y="1088" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="19" font-weight="bold" fill="#111" text-anchor="start" dominant-baseline="central">Как найти пады</text>
+<text x="824" y="1120" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15.5" fill="#222" dominant-baseline="central"><tspan font-weight="bold" fill="#222">Tang:</tspan><tspan font-weight="normal" fill="#222"> счёт от края USB-C / microSD, квадратный пад = 1-й.</tspan></text>
+<text x="876" y="1144" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="normal" fill="#222" text-anchor="start" dominant-baseline="central">Правый ряд (J5): 26 = 6-й, 27 = 7-й. Левый ряд (J6): GND = 23-й.</text>
+<text x="824" y="1176" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15.5" fill="#222" dominant-baseline="central"><tspan font-weight="bold" fill="#222">ESP32:</tspan><tspan font-weight="normal" fill="#222"> счёт от края с антенной; сторона без кнопки RST,</tspan></text>
+<text x="884" y="1200" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="normal" fill="#222" text-anchor="start" dominant-baseline="central">внутренний ряд (2-й от кромки): IO17 = 5-й, IO16 = 6-й, GND = 7-й.</text>
+<text x="824" y="1246" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="19" font-weight="bold" fill="#d0312d" text-anchor="start" dominant-baseline="central">Не соединять</text>
+<text x="824" y="1278" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="normal" fill="#222" text-anchor="start" dominant-baseline="central">3V3 / 5V Tang и VCC (5 В) / 3V3 ESP32 — каждая плата питается от своего USB.</text>
+<text x="824" y="1302" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="normal" fill="#222" text-anchor="start" dominant-baseline="central">TXD / RXD ESP32 (1-й и 2-й пады) — это USB-консоль, их не трогать.</text>
+<text x="824" y="1348" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="19" font-weight="bold" fill="#111" text-anchor="start" dominant-baseline="central">Перед включением</text>
+<text x="824" y="1380" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="normal" fill="#222" text-anchor="start" dominant-baseline="central">1) Загрузить в Tang прошивку, где 26/27 = UART.  2) Паять без питания.</text>
+<text x="824" y="1404" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="normal" fill="#222" text-anchor="start" dominant-baseline="central">3) Мультиметром: нет замыканий между соседними падами, GND ↔ GND звонится.</text>
+</svg>

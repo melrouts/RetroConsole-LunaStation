@@ -1,0 +1,13 @@
+`verilator_config
+// Yosys supplies Gowin black-box port declarations, not behavioral models.
+lint_off -rule DECLFILENAME -file "*gowin/cells_sim.v"
+lint_off -rule UNUSEDPARAM -file "*gowin/cells_sim.v"
+lint_off -rule UNUSEDSIGNAL -file "*gowin/cells_sim.v"
+lint_off -rule UNDRIVEN -file "*gowin/cells_sim.v"
+lint_off -rule TIMESCALEMOD -file "*gowin/cells_sim.v"
+lint_off -rule SPECIFYIGN -file "*gowin/cells_sim.v"
+lint_off -rule DECLFILENAME -file "*gowin/cells_xtra_gw1n.v"
+lint_off -rule UNUSEDPARAM -file "*gowin/cells_xtra_gw1n.v"
+lint_off -rule UNUSEDSIGNAL -file "*gowin/cells_xtra_gw1n.v"
+lint_off -rule UNDRIVEN -file "*gowin/cells_xtra_gw1n.v"
+lint_off -rule TIMESCALEMOD -file "*gowin/cells_xtra_gw1n.v"

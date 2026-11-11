@@ -1,0 +1,41 @@
+#ifndef MMIO_H
+#define MMIO_H
+
+#include <stdint.h>
+
+#define MMIO32(offset) (*(volatile uint32_t *)(uintptr_t)(0x80000000u + (offset)))
+#define INPUT_STATE MMIO32(0x00)
+#define INPUT_EVENT MMIO32(0x04)
+#define AUDIO_CONTROL MMIO32(0x08)
+#define AUDIO_PERIOD MMIO32(0x0c)
+#define VIDEO_STATUS MMIO32(0x10)
+#define FRAME_COUNTER MMIO32(0x14)
+#define VBLANK_EVENT MMIO32(0x18)
+#define HARDWARE_VERSION MMIO32(0x1c)
+#define ABI_VERSION MMIO32(0x20)
+#define SD_STATUS MMIO32(0x24)
+#define SD_COMMAND MMIO32(0x28)
+#define SD_DATA MMIO32(0x2c)
+#define BOOT_STATUS MMIO32(0x30)
+#define VIDEO_XY MMIO32(0x40)
+#define VIDEO_FLAGS MMIO32(0x44)
+#define VIDEO_HUD MMIO32(0x48)
+#define VIDEO_SCORE MMIO32(0x4c)
+#define VIDEO_COMMIT MMIO32(0x5c)
+#define UART_STATUS MMIO32(0x60)
+#define UART_DATA MMIO32(0x64)
+#define UART_CONTROL MMIO32(0x68)
+#define AUDIO_LINK MMIO32(0x70)
+#define AUDIO_CONFIG MMIO32(0x74)
+#define AUDIO_LINK_VERSION 0x41554401u
+#define GAME_AUDIO_IDLE 0u
+#define GAME_AUDIO_FLYING 1u
+#define GAME_AUDIO_LANDED 2u
+#define GAME_AUDIO_CRASHED 3u
+#define GAME_AUDIO_ATTRACT 4u
+#define GAME_AUDIO_FLYING_THRUST 5u
+#define GAME_AUDIO_DEMO 6u
+#define GAME_AUDIO_DEMO_THRUST 7u
+#define TERRAIN_COLUMN(index) (*(volatile uint32_t *)(uintptr_t)(0x81000000u + (index) * 4u))
+
+#endif

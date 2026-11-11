@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Luna Station — Exhibition Booklet</title>
+<style>
+@font-face { font-family: Pixel; src: url("PressStart2P.ttf"); }
+@font-face { font-family: Inter; src: url("Inter.ttf"); font-weight: 100 900; }
+@page { size: A4 landscape; margin: 0; }
+:root { --navy: #081a31; --ink: #14233a; --mint: #7ef7c0; --green: #15745c; --pale: #eefbf5; --orange: #e77a14; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { color: var(--ink); font-family: Inter, sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.sheet { width: 297mm; height: 210mm; display: grid; grid-template-columns: 1fr 1fr; break-after: page; overflow: hidden; }
+.sheet:last-child { break-after: auto; }
+.panel { height: 210mm; padding: 10mm 12mm; overflow: hidden; }
+.cover, .back { display: flex; flex-direction: column; }
+.cover { background: var(--navy); color: #fff; }
+.brand { display: flex; align-items: center; gap: 5mm; }
+.brand img { width: 18mm; height: 18mm; }
+.brand span { color: var(--mint); font-family: Pixel; font-size: 7pt; line-height: 1.8; }
+h1, h2, h3, .eyebrow { font-family: Pixel; }
+h1 { color: #fff; font-size: 23pt; line-height: 1.2; margin: 7mm 0 3mm; }
+h1 span { color: var(--mint); }
+.cover .subtitle { color: #d6f1fb; font-size: 12pt; font-weight: 700; margin: 0; }
+.cover-art { height: 72mm; flex: none; margin: 6mm -12mm 5mm; background: url("hero.png") center 35% / cover; border-block: .6mm solid var(--mint); }
+.cover .intro { font-size: 12pt; line-height: 1.45; margin: 0; }
+.cover .event { margin-top: auto; padding-top: 4mm; border-top: .4mm solid #44766e; color: #d6f1fb; font-size: 10.5pt; line-height: 1.5; }
+.eyebrow { color: var(--green); font-size: 7.5pt; letter-spacing: .3px; line-height: 1.5; margin: 0 0 3mm; }
+h2 { color: var(--navy); font-size: 15pt; line-height: 1.3; margin: 0 0 4mm; }
+h3 { color: var(--navy); font-size: 8.5pt; line-height: 1.4; margin: 4mm 0 2mm; }
+p { font-size: 11.5pt; line-height: 1.4; margin: 0 0 3mm; }
+.back { background: var(--pale); }
+.back h2 { font-size: 17pt; }
+.back .link-label { margin-top: 5mm; color: var(--green); font-family: Pixel; font-size: 8pt; line-height: 1.5; }
+.qr { display: block; width: 43mm; height: 43mm; background: #fff; margin: 4mm 0; }
+.url { display: block; color: var(--navy); font-size: 11pt; font-weight: 700; line-height: 1.45; text-decoration: none; }
+.back .note { margin-top: auto; padding-top: 4mm; border-top: .5mm solid #9bcdbb; font-size: 10pt; line-height: 1.5; }
+.shot { display: block; width: 91mm; max-width: 100%; margin: 4mm auto 1mm; border: .6mm solid var(--navy); image-rendering: pixelated; }
+.caption { color: #586d7d; font-size: 8.5pt; text-align: center; margin: 0 0 3mm; }
+.controls { width: 100%; border-collapse: collapse; font-size: 11pt; line-height: 1.35; }
+.controls th, .controls td { padding: 1.3mm 0; text-align: left; vertical-align: top; border-bottom: .25mm solid #d5e0e5; }
+.controls th { width: 30mm; color: var(--green); font-weight: 800; }
+.keyboard { background: var(--pale); border-left: 1.2mm solid var(--mint); font-size: 10.5pt; margin-top: 4mm; padding: 3mm 4mm; }
+.specs { width: 100%; border-collapse: collapse; font-size: 10.8pt; line-height: 1.32; }
+.specs th, .specs td { padding: 1.5mm 0; text-align: left; vertical-align: top; border-bottom: .25mm solid #d5e0e5; }
+.specs th { width: 22mm; color: var(--green); font-family: Pixel; font-size: 6.5pt; padding-top: 2.1mm; }
+.designs { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin-top: 4mm; }
+.designs img { display: block; width: 100%; }
+.designs span { display: block; color: #586d7d; text-align: center; font-size: 8pt; }
+.small { color: #586d7d; font-size: 9pt; line-height: 1.4; margin-top: 2mm; }
+</style>
+</head>
+<body>
+<!-- Outside of the folded sheet: back cover, then front cover. -->
+<section class="sheet">
+  <div class="panel back">
+    <p class="eyebrow">KEEP EXPLORING</p>
+    <h2>BUILD.<br>HACK.<br>PLAY.</h2>
+    <p>Discover the hardware design, game code, wiring guides and
+      3D-printable console and gamepad models on GitHub.</p>
+    <div class="link-label">SCAN FOR THE PROJECT</div>
+    <img class="qr" src="qr.svg" alt="QR code for the Luna Station GitHub repository">
+    <a class="url" href="https://github.com/melrouts/RetroConsole-LunaStation">github.com/melrouts/<br>RetroConsole-LunaStation</a>
+    <p class="note"><strong>Luna Station</strong> is a hobby project by Eduard Garanskij.<br>
+      Created for Retro Computer Festival 2026 in Cambridge.<br>
+      Contact: retro@lea.lt</p>
+  </div>
+  <div class="panel cover">
+    <div class="brand">
+      <img src="logo.svg" alt="Luna Station mission badge">
+      <span>LUNA 9<br>1966 &mdash; 2026</span>
+    </div>
+    <h1>LUNA<br><span>STATION</span></h1>
+    <p class="subtitle">A retro console built from logic up</p>
+    <div class="cover-art" role="img" aria-label="Pixel-art lunar lander above the Moon"></div>
+    <p class="intro">A hobby project celebrating <strong>60 years since Luna 9's first soft landing on the Moon</strong>.</p>
+    <p class="event">Play Lunar Lander on a homemade FPGA console.<br>
+      <strong>Retro Computer Festival &middot; Cambridge &middot; 2026</strong></p>
+  </div>
+</section>
+
+<!-- Inside: left page, then right page. -->
+<section class="sheet">
+  <div class="panel">
+    <p class="eyebrow">01 / THE GAME</p>
+    <h2>LAND IT<br>IF YOU CAN</h2>
+    <p>Gravity never stops. Rotate your lander, use just enough thrust and
+      touch down gently before your fuel runs out. Narrower pads pay bigger
+      bonuses &mdash; if you can land safely.</p>
+    <img class="shot" src="shot-play.png" alt="Lunar Lander gameplay with landing pads">
+    <p class="caption">Actual gameplay, generated by the FPGA.</p>
+    <h3>GAMEPAD CONTROLS</h3>
+    <table class="controls">
+      <tr><th>LEFT / RIGHT</th><td>Rotate the lander</td></tr>
+      <tr><th>THRUST</th><td>Start the game or fire the engine</td></tr>
+      <tr><th>MENU</th><td>Go back or open the menu</td></tr>
+    </table>
+    <p class="keyboard">With the optional keyboard bridge: <strong>A / D</strong> rotate,
+      <strong>W</strong> thrusts and <strong>B</strong> opens the menu.</p>
+  </div>
+  <div class="panel">
+    <p class="eyebrow">02 / INSIDE THE CONSOLE</p>
+    <h2>A COMPUTER<br>FROM SCRATCH</h2>
+    <p>An FPGA is a chip whose logic can be configured to become a custom
+      computer. Luna Station combines that hardware with a tiny game program.</p>
+    <table class="specs">
+      <tr><th>BOARD</th><td>Sipeed Tang Nano 9K FPGA</td></tr>
+      <tr><th>CPU</th><td>32-bit PicoRV32 RISC-V, 27 MHz; 8 KiB application RAM</td></tr>
+      <tr><th>VIDEO</th><td>HDMI, 640 &times; 480 at 60 Hz</td></tr>
+      <tr><th>GAMES</th><td>Booted from a FAT-formatted SD card</td></tr>
+      <tr><th>SOUND</th><td>ESP32 synthesizer and MAX98357A amplifier</td></tr>
+      <tr><th>INPUT</th><td>ESP-NOW wireless gamepads; optional LED matrix</td></tr>
+    </table>
+    <div class="designs">
+      <div><img src="../hardware/luna-station-case/v1/previews/variant_1_iso.png" alt="Console case CAD render"><span>Console case design</span></div>
+      <div><img src="../hardware/gamepad-power-holder/v7/gamepad_case_v7_with_lid.png" alt="Gamepad case CAD render"><span>Gamepad case design</span></div>
+    </div>
+    <p class="small">Case images are CAD renders. The project is a work in progress:
+      check the wiring and printed parts for your own hardware.</p>
+  </div>
+</section>
+</body>
+</html>

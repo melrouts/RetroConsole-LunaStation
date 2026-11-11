@@ -1,0 +1,5 @@
+`verilator_config
+// Keep upstream CPU unmodified: disabled options retain debug nets and legacy style.
+lint_off -rule UNUSEDSIGNAL -file "*third_party/picorv32/picorv32.v"
+lint_off -rule GENUNNAMED -file "*third_party/picorv32/picorv32.v"
+lint_off -rule BLKSEQ -file "*third_party/picorv32/picorv32.v"

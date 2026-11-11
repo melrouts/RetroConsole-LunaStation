@@ -1,0 +1,8 @@
+Fontconfig warning: "/Applications/OpenSCAD.app/Contents/Resources/fonts/fonts.conf", line 84: unknown element "blank"
+Compiling design (CSG Products normalization)...
+Normalized CSG tree has 103 elements
+Geometries in cache: 568
+Geometry cache size in bytes: 9992640
+CGAL Polyhedrons in cache: 0
+CGAL cache size in bytes: 0
+Total rendering time: 0:00:01.221

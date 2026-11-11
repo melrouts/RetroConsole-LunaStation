@@ -1,0 +1,37 @@
+IO_LOC "clk" 52;
+IO_PORT "clk" IO_TYPE=LVCMOS33 PULL_MODE=NONE;
+IO_LOC "uart_tx" 17;
+IO_PORT "uart_tx" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+IO_LOC "uart_rx" 18;
+IO_PORT "uart_rx" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_LOC "link_uart_rx" 27;
+IO_PORT "link_uart_rx" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_LOC "link_uart_tx" 26;
+IO_PORT "link_uart_tx" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+IO_LOC "tmds_d_p[0]" 71;
+IO_PORT "tmds_d_p[0]" IO_TYPE=LVDS25E PULL_MODE=NONE DRIVE=8;
+IO_LOC "tmds_d_n[0]" 70;
+IO_PORT "tmds_d_n[0]" IO_TYPE=LVDS25E PULL_MODE=NONE DRIVE=8;
+IO_LOC "tmds_d_p[1]" 73;
+IO_PORT "tmds_d_p[1]" IO_TYPE=LVDS25E PULL_MODE=NONE DRIVE=8;
+IO_LOC "tmds_d_n[1]" 72;
+IO_PORT "tmds_d_n[1]" IO_TYPE=LVDS25E PULL_MODE=NONE DRIVE=8;
+IO_LOC "tmds_d_p[2]" 75;
+IO_PORT "tmds_d_p[2]" IO_TYPE=LVDS25E PULL_MODE=NONE DRIVE=8;
+IO_LOC "tmds_d_n[2]" 74;
+IO_PORT "tmds_d_n[2]" IO_TYPE=LVDS25E PULL_MODE=NONE DRIVE=8;
+IO_LOC "tmds_clk_p" 69;
+IO_PORT "tmds_clk_p" IO_TYPE=LVDS25E PULL_MODE=NONE DRIVE=8;
+IO_LOC "tmds_clk_n" 68;
+IO_PORT "tmds_clk_n" IO_TYPE=LVDS25E PULL_MODE=NONE DRIVE=8;
+IO_LOC "sd_sck" 36;
+IO_PORT "sd_sck" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+IO_LOC "sd_mosi" 37;
+IO_PORT "sd_mosi" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+IO_LOC "sd_cs_n" 38;
+IO_PORT "sd_cs_n" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8;
+IO_LOC "sd_miso" 39;
+IO_PORT "sd_miso" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+// Pin the HDMI CLKDIV: unconstrained, the IO placement can move it to an HCLK
+// that the 126 MHz serial_clk cannot reach through dedicated clock routing.
+INS_LOC "core.output_stage.pixel_divider" BOTTOMSIDE[0];

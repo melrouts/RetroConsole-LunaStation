@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luna Station — концепт корпуса V1</title>
+<style>
+  :root { color-scheme: light; font-family: system-ui, sans-serif; color: #242d3a; background: #edf0f4; }
+  * { box-sizing: border-box; }
+  body { max-width: 1280px; margin: auto; padding: 32px 24px 60px; }
+  .eyebrow { color: #6a7480; letter-spacing: .18em; font-size: 12px; font-weight: 700; }
+  h1 { font-size: clamp(30px, 5vw, 58px); margin: 8px 0; letter-spacing: -.04em; }
+  h2 { font-size: 22px; }
+  p { line-height: 1.65; }
+  .muted { color: #647083; }
+  .notice { border-left: 4px solid #e59630; padding: 12px 18px; background: #fff8e9; margin: 24px 0; border-radius: 0 12px 12px 0; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
+  button { font: inherit; background: white; border: 1px solid #cdd3dc; padding: 10px 16px; border-radius: 24px; cursor: pointer; color: inherit; }
+  button[aria-pressed="true"] { background: #253348; border-color: #253348; color: white; }
+  button:focus-visible, a:focus-visible { outline: 3px solid #d88a24; outline-offset: 3px; }
+  .hero { border-radius: 20px; overflow: hidden; background: #fafafa; }
+  .hero img { display: block; width: 100%; }
+  .caption { padding: 16px 24px; background: white; margin: 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 18px; margin-top: 20px; }
+  figure { margin: 0; background: white; border-radius: 16px; overflow: hidden; }
+  figure img { width: 100%; display: block; }
+  figcaption { padding: 14px 20px 20px; line-height: 1.55; }
+  a { color: #245c84; text-underline-offset: 3px; }
+  .specs { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+  .specs p { background: white; padding: 16px; border-radius: 12px; margin: 0; }
+  strong { font-weight: 650; }
+</style>
+<header>
+  <div class="eyebrow">LUNA STATION / HARDWARE DESIGN / V1</div>
+  <h1>Своя орбита.</h1>
+  <p class="muted">Корпус игровой консоли в стиле геймпадов Luna Station. Выбран Orbital graphite: графит, тёплый белый и оранжевый.</p>
+</header>
+<div class="notice"><strong>Концепт, не финальная посадочная модель.</strong> Окна HDMI и USB-C обновлены по замерам штекеров и осей над платой. Глубину подключения, установочную высоту и отверстия платы, габарит динамика ещё нужно сверить с электроникой.</div>
+<div class="specs">
+  <p><strong>188 × 120 × 44 мм</strong><br><span class="muted">Предложенный габарит</span></p>
+  <p><strong>Плата 160 × 80 мм</strong><br><span class="muted">Четыре стойки M3</span></p>
+  <p><strong>4 пары Ø10 × 1,5</strong><br><span class="muted">Магниты + бортик</span></p>
+  <p><strong>R18 / три цвета</strong><br><span class="muted">Инкрустация 0,6 мм</span></p>
+</div>
+<h2>Выбрано: Orbital graphite</h2>
+<div class="controls" aria-label="Расцветка">
+  <button type="button" data-palette="1" aria-pressed="true">01 · Графит / оранжевый</button>
+  <button type="button" data-palette="2" aria-pressed="false">02 · Серебро / оранжевый</button>
+  <button type="button" data-palette="3" aria-pressed="false">03 · Синий / бирюзовый</button>
+</div>
+<div class="controls" aria-label="Ракурс">
+  <button type="button" data-view="iso" aria-pressed="true">Изометрия</button>
+  <button type="button" data-view="top" aria-pressed="false">Сверху</button>
+</div>
+<div class="hero">
+  <img id="hero" src="previews/variant_1_iso.png" alt="Графитовый корпус, изометрия">
+  <p id="caption" class="caption" aria-live="polite">Выбран Orbital graphite — графит, тёплый белый, оранжевый. Остальные варианты сохранены для сравнения.</p>
+</div>
+<h2>Разъёмы на противоположных боковинах</h2>
+<p>Вид сверху, текст читается, динамик справа: <strong>HDMI вверху (Y+), USB-C внизу (Y−)</strong>. Если смотреть от короткого торца без динамика в сторону динамика, HDMI слева, USB-C справа. Оси обоих окон — в 15,75 мм от короткого края платы. Шов поднят до 36,5 мм: окна целиком в нижней половине, бортик непрерывный. Две магнитные пары перенесены ближе к середине, освобождая путь кабелей; общая высота осталась 44 мм.</p>
+<div class="hero"><img src="previews/ports.png" alt="В виде сверху HDMI на верхней и USB-C на нижней длинных боковинах; оба окна у конца без динамика"></div>
+<p class="muted">По замерам: штекер HDMI 22 × 10,5 мм, USB-C 13 × 6,5 мм. Окна с зазором 0,5 мм на сторону: HDMI 23 × 11,5 мм, USB-C 14 × 7,5 мм. Оси на 16,7 и 15 мм над верхом основной платы — при её текущей установке это 28,3 и 26,6 мм от внешнего дна. До кромки платы от внутренней стенки 16,8 мм: возможность вставить кабели до конца ещё нужно подтвердить.</p>
+<h2>Как устроен корпус</h2>
+<div class="grid">
+  <figure><img src="previews/exploded.png" alt="Нижний корпус и приподнятая крышка"><figcaption><strong>Две магнитные половины.</strong> Центрирующий бортик принимает боковые нагрузки. Четыре пары магнитов расположены вне контура платы.</figcaption></figure>
+  <figure><img src="previews/inside.png" alt="Условная плата и мостик с динамиком"><figcaption><strong>Без дополнительных отверстий в плате.</strong> Мостик крепится через два правых угловых отверстия. Зелёная плата и динамик — габаритные макеты.</figcaption></figure>
+  <figure><img src="previews/bridge.png" alt="Мостик с центральным отверстием и ножками"><figcaption><strong>Магнит динамика Ø32 мм.</strong> Отверстие Ø32,4 с зазором; ножки, кольцо и прорези под фиксацию корзины. Окончательный прижим зависит от реального динамика.</figcaption></figure>
+</div>
+<h2>Тест посадки — печатать первым</h2>
+<p>Тонкий одноцветный образец из настоящего низа корпуса: 4 стойки M3, стенки с окнами HDMI и USB-C, кольцо Ø32,4 под магнит динамика и планка подбора магнитов (Ø10,1 / 10,3 / 10,5) и вставок (Ø4,0 / 4,2 / 4,4). Всё опущено на 1,6 мм, взаимное положение платы, стоек и окон — как в корпусе. Печатать тем же пластиком и профилем, что корпус.</p>
+<div class="hero"><img src="previews/fit_test.png" alt="Тест посадки: вид сверху с нумерованными точками проверки, изометрия с платой и порядок проверки"></div>
+<p><a href="luna_station_fit_test.3mf" download>3MF: тест посадки</a> · <a href="stl/fit_test.stl" download>STL</a> — 198 × 120 × 34,9 мм, одна деталь, без башни.</p>
+<h2>Дно «Кратеры»</h2>
+<p>Точки по бокам и полутоновая «луна» под динамиком, цветные надпись и орбита на нижней грани и 4 выемки Ø13 × 1,2 мм под ножки 12,7 мм. Крышка, стойки, магниты и окна не менялись. Варианты для сравнения: <a href="previews/base_options.png">base_options.png</a>.</p>
+<div class="hero"><img src="previews/base.png" alt="Дно корпуса: надпись LUNA STATION, орбита, полутоновая луна в оранжевом кольце, точки по бокам"></div>
+<h2>Исходники и модели</h2>
+<p><a href="luna_station.scad">Параметрический OpenSCAD</a> · <a href="README.md">Размеры и ограничения</a> · <a href="previews/color_options.png">Все расцветки</a></p>
+<p><a id="download-lid" href="luna_station_1_lid.3mf" download>3MF: крышка</a> · <a id="download-base" href="luna_station_1_base.3mf" download>3MF: низ и мостик</a> — два отдельных файла, по одному на пластину P1S. Цветные части крышки и дна сгруппированы; на обеих пластинах оставлено место под башню очистки. Настройки принтера, процесса и филаментов не включены.</p>
+<p class="muted">Используйте новые файлы вместо старых *_concept.3mf: исходная общая раскладка задевала запретную зону P1S. Не отключайте запретную зону; проверьте назначение цветов, кайму и положение башни в слайсере.</p>
+<p class="muted">Для окончательной посадки нужны реальные координаты отверстий, высота установки платы и компонентов, глубина подключения кабелей, профиль динамика и размеры вплавляемых втулок. Весь концепт сохранён в hardware/luna-station-case/v1/.</p>
+<script>
+  let palette = "1";
+  let view = "iso";
+  const captions = {
+    "1": "Выбран Orbital graphite — графит, тёплый белый, оранжевый. Остальные варианты сохранены для сравнения.",
+    "2": "Lunar silver — светло-серая крышка, графитовые низ и надписи, оранжевые акценты.",
+    "3": "Deep space — тёмно-синий корпус, молочно-белые надписи, бирюзовые акценты."
+  };
+  function update() {
+    const hero = document.getElementById("hero");
+    hero.src = `previews/variant_${palette}_${view}.png`;
+    hero.alt = `${captions[palette]} ${view === "iso" ? "Изометрия" : "Вид сверху"}`;
+    document.getElementById("caption").textContent = captions[palette];
+    document.getElementById("download-lid").href = `luna_station_${palette}_lid.3mf`;
+    document.getElementById("download-base").href = `luna_station_${palette}_base.3mf`;
+    for (const button of document.querySelectorAll("[data-palette]"))
+      button.setAttribute("aria-pressed", String(button.dataset.palette === palette));
+    for (const button of document.querySelectorAll("[data-view]"))
+      button.setAttribute("aria-pressed", String(button.dataset.view === view));
+  }
+  for (const button of document.querySelectorAll("[data-palette]"))
+    button.addEventListener("click", () => { palette = button.dataset.palette; update(); });
+  for (const button of document.querySelectorAll("[data-view]"))
+    button.addEventListener("click", () => { view = button.dataset.view; update(); });
+</script>
+</html>

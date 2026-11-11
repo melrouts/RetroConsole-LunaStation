@@ -1,0 +1,15 @@
+[2026-11-07 19:43:37.345424] [0x00000001f1273f80] [trace]   Initializing StaticPrintConfigs
+[luna_station_1_lid.3mf]
+size_x = 188.000000
+size_y = 120.000000
+size_z = 7.349998
+min_x = -94.000000
+min_y = -60.000000
+min_z = 0.000000
+max_x = 94.000000
+max_y = 60.000000
+max_z = 7.349998
+number_of_facets = 42856
+manifold = yes
+number_of_parts =  37
+volume = 73664.046875

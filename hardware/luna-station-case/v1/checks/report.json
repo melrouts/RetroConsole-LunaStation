@@ -1,0 +1,739 @@
+{
+  "scope": "CAD concept only; no physical fit, thermal or acoustic verification",
+  "checks": [
+    {
+      "passed": true,
+      "description": "bottom: watertight, consistently oriented, positive volume"
+    },
+    {
+      "passed": true,
+      "description": "bottom: one connected solid"
+    },
+    {
+      "passed": true,
+      "description": "base_text: watertight, consistently oriented, positive volume"
+    },
+    {
+      "passed": true,
+      "description": "base_accent: watertight, consistently oriented, positive volume"
+    },
+    {
+      "passed": true,
+      "description": "lid: watertight, consistently oriented, positive volume"
+    },
+    {
+      "passed": true,
+      "description": "lid: one connected solid"
+    },
+    {
+      "passed": true,
+      "description": "text: watertight, consistently oriented, positive volume"
+    },
+    {
+      "passed": true,
+      "description": "accent: watertight, consistently oriented, positive volume"
+    },
+    {
+      "passed": true,
+      "description": "bridge: watertight, consistently oriented, positive volume"
+    },
+    {
+      "passed": true,
+      "description": "bridge: one connected solid"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: watertight, consistently oriented, positive volume"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: one connected solid"
+    },
+    {
+      "passed": true,
+      "description": "pcb: watertight, consistently oriented, positive volume"
+    },
+    {
+      "passed": true,
+      "description": "speaker: watertight, consistently oriented, positive volume"
+    },
+    {
+      "passed": true,
+      "description": "bottom extents match the CAD parameters, including lip"
+    },
+    {
+      "passed": true,
+      "description": "assembled height matches the CAD parameters"
+    },
+    {
+      "passed": true,
+      "description": "PCB is 160 x 80 mm"
+    },
+    {
+      "passed": true,
+      "description": "bottom bore at [-75, -35], Z 9: 4.198 mm (target 4.2)"
+    },
+    {
+      "passed": true,
+      "description": "M3 insert pocket at [-75, -35] has a closed floor"
+    },
+    {
+      "passed": true,
+      "description": "pcb bore at [-75, -35], Z 10.5: 3.399 mm (target 3.4)"
+    },
+    {
+      "passed": true,
+      "description": "bottom bore at [-75, 35], Z 9: 4.198 mm (target 4.2)"
+    },
+    {
+      "passed": true,
+      "description": "M3 insert pocket at [-75, 35] has a closed floor"
+    },
+    {
+      "passed": true,
+      "description": "pcb bore at [-75, 35], Z 10.5: 3.399 mm (target 3.4)"
+    },
+    {
+      "passed": true,
+      "description": "bottom bore at [75, -35], Z 9: 4.198 mm (target 4.2)"
+    },
+    {
+      "passed": true,
+      "description": "M3 insert pocket at [75, -35] has a closed floor"
+    },
+    {
+      "passed": true,
+      "description": "pcb bore at [75, -35], Z 10.5: 3.399 mm (target 3.4)"
+    },
+    {
+      "passed": true,
+      "description": "bottom bore at [75, 35], Z 9: 4.198 mm (target 4.2)"
+    },
+    {
+      "passed": true,
+      "description": "M3 insert pocket at [75, 35] has a closed floor"
+    },
+    {
+      "passed": true,
+      "description": "pcb bore at [75, 35], Z 10.5: 3.399 mm (target 3.4)"
+    },
+    {
+      "passed": true,
+      "description": "bottom bore at [-40, -49.5], Z 35.8: 10.296 mm (target 10.3)"
+    },
+    {
+      "passed": true,
+      "description": "lid bore at [-40, -49.5], Z 37.35: 10.296 mm (target 10.3)"
+    },
+    {
+      "passed": true,
+      "description": "paired magnet pockets at [-40, -49.5] are blind"
+    },
+    {
+      "passed": true,
+      "description": "10 mm magnet fits the lower pocket at [-40, -49.5]"
+    },
+    {
+      "passed": true,
+      "description": "bottom bore at [-40, 49.5], Z 35.8: 10.296 mm (target 10.3)"
+    },
+    {
+      "passed": true,
+      "description": "lid bore at [-40, 49.5], Z 37.35: 10.296 mm (target 10.3)"
+    },
+    {
+      "passed": true,
+      "description": "paired magnet pockets at [-40, 49.5] are blind"
+    },
+    {
+      "passed": true,
+      "description": "10 mm magnet fits the lower pocket at [-40, 49.5]"
+    },
+    {
+      "passed": true,
+      "description": "bottom bore at [60, -49.5], Z 35.8: 10.296 mm (target 10.3)"
+    },
+    {
+      "passed": true,
+      "description": "lid bore at [60, -49.5], Z 37.35: 10.296 mm (target 10.3)"
+    },
+    {
+      "passed": true,
+      "description": "paired magnet pockets at [60, -49.5] are blind"
+    },
+    {
+      "passed": true,
+      "description": "10 mm magnet fits the lower pocket at [60, -49.5]"
+    },
+    {
+      "passed": true,
+      "description": "bottom bore at [60, 49.5], Z 35.8: 10.296 mm (target 10.3)"
+    },
+    {
+      "passed": true,
+      "description": "lid bore at [60, 49.5], Z 37.35: 10.296 mm (target 10.3)"
+    },
+    {
+      "passed": true,
+      "description": "paired magnet pockets at [60, 49.5] are blind"
+    },
+    {
+      "passed": true,
+      "description": "10 mm magnet fits the lower pocket at [60, 49.5]"
+    },
+    {
+      "passed": true,
+      "description": "HDMI: centre follows measured PCB-relative offsets"
+    },
+    {
+      "passed": true,
+      "description": "HDMI: 0.5 mm clearance per side of measured plug"
+    },
+    {
+      "passed": true,
+      "description": "HDMI: correct wall in the top view with readable text (HDMI +Y, USB-C -Y)"
+    },
+    {
+      "passed": true,
+      "description": "HDMI: rounded corners do not clip the measured rectangular plug envelope"
+    },
+    {
+      "passed": true,
+      "description": "HDMI: side-wall aperture [23.0, 11.5] mm (target 23 x 11.5)"
+    },
+    {
+      "passed": true,
+      "description": "HDMI: rounded throat matches its complete specified profile"
+    },
+    {
+      "passed": true,
+      "description": "HDMI: clear from exterior to PCB edge at depth 0.05 mm"
+    },
+    {
+      "passed": true,
+      "description": "HDMI: clear from exterior to PCB edge at depth 1.6 mm"
+    },
+    {
+      "passed": true,
+      "description": "HDMI: clear from exterior to PCB edge at depth 3.3 mm"
+    },
+    {
+      "passed": true,
+      "description": "HDMI: clear from exterior to PCB edge at depth 10.5 mm"
+    },
+    {
+      "passed": true,
+      "description": "HDMI: clear from exterior to PCB edge at depth 19.9 mm"
+    },
+    {
+      "passed": true,
+      "description": "HDMI: exterior lead-in bevel opens outwards"
+    },
+    {
+      "passed": true,
+      "description": "HDMI: 1.85 mm web beneath seam; locating lip is continuous"
+    },
+    {
+      "passed": true,
+      "description": "HDMI: entire aperture corridor to PCB edge clears bottom (0.000193 mm3)"
+    },
+    {
+      "passed": true,
+      "description": "HDMI: entire aperture corridor to PCB edge clears lid (0.000000 mm3)"
+    },
+    {
+      "passed": true,
+      "description": "HDMI: entire aperture corridor to PCB edge clears bridge (0.000000 mm3)"
+    },
+    {
+      "passed": true,
+      "description": "USB-C: centre follows measured PCB-relative offsets"
+    },
+    {
+      "passed": true,
+      "description": "USB-C: 0.5 mm clearance per side of measured plug"
+    },
+    {
+      "passed": true,
+      "description": "USB-C: correct wall in the top view with readable text (HDMI +Y, USB-C -Y)"
+    },
+    {
+      "passed": true,
+      "description": "USB-C: rounded corners do not clip the measured rectangular plug envelope"
+    },
+    {
+      "passed": true,
+      "description": "USB-C: side-wall aperture [14.0, 7.5] mm (target 14 x 7.5)"
+    },
+    {
+      "passed": true,
+      "description": "USB-C: rounded throat matches its complete specified profile"
+    },
+    {
+      "passed": true,
+      "description": "USB-C: clear from exterior to PCB edge at depth 0.05 mm"
+    },
+    {
+      "passed": true,
+      "description": "USB-C: clear from exterior to PCB edge at depth 1.6 mm"
+    },
+    {
+      "passed": true,
+      "description": "USB-C: clear from exterior to PCB edge at depth 3.3 mm"
+    },
+    {
+      "passed": true,
+      "description": "USB-C: clear from exterior to PCB edge at depth 10.5 mm"
+    },
+    {
+      "passed": true,
+      "description": "USB-C: clear from exterior to PCB edge at depth 19.9 mm"
+    },
+    {
+      "passed": true,
+      "description": "USB-C: exterior lead-in bevel opens outwards"
+    },
+    {
+      "passed": true,
+      "description": "USB-C: 5.55 mm web beneath seam; locating lip is continuous"
+    },
+    {
+      "passed": true,
+      "description": "USB-C: entire aperture corridor to PCB edge clears bottom (0.000188 mm3)"
+    },
+    {
+      "passed": true,
+      "description": "USB-C: entire aperture corridor to PCB edge clears lid (0.000000 mm3)"
+    },
+    {
+      "passed": true,
+      "description": "USB-C: entire aperture corridor to PCB edge clears bridge (0.000000 mm3)"
+    },
+    {
+      "passed": true,
+      "description": "bridge bore at [45, 0], Z 24.4: 32.388 mm (target 32.4)"
+    },
+    {
+      "passed": true,
+      "description": "bridge bore at [75, -35], Z 12.6: 3.399 mm (target 3.4)"
+    },
+    {
+      "passed": true,
+      "description": "bridge bore at [75, -35], Z 24.4: 3.399 mm (target 3.4)"
+    },
+    {
+      "passed": true,
+      "description": "bridge bore at [75, 35], Z 12.6: 3.399 mm (target 3.4)"
+    },
+    {
+      "passed": true,
+      "description": "bridge bore at [75, 35], Z 24.4: 3.399 mm (target 3.4)"
+    },
+    {
+      "passed": true,
+      "description": "bottom / lid: intersection 0.000000 mm3"
+    },
+    {
+      "passed": true,
+      "description": "bottom / pcb: intersection 0.000000 mm3"
+    },
+    {
+      "passed": true,
+      "description": "bottom / bridge: intersection 0.000000 mm3"
+    },
+    {
+      "passed": true,
+      "description": "lid / pcb: intersection 0.000000 mm3"
+    },
+    {
+      "passed": true,
+      "description": "lid / bridge: intersection 0.000000 mm3"
+    },
+    {
+      "passed": true,
+      "description": "bridge / pcb: intersection 0.000000 mm3"
+    },
+    {
+      "passed": true,
+      "description": "speaker / bottom: intersection 0.000000 mm3"
+    },
+    {
+      "passed": true,
+      "description": "speaker / lid: intersection 0.000000 mm3"
+    },
+    {
+      "passed": true,
+      "description": "speaker / bridge: intersection 0.000000 mm3"
+    },
+    {
+      "passed": true,
+      "description": "speaker / pcb: intersection 0.000000 mm3"
+    },
+    {
+      "passed": true,
+      "description": "lid / text: intersection 0.000000 mm3"
+    },
+    {
+      "passed": true,
+      "description": "lid / accent: intersection 0.000000 mm3"
+    },
+    {
+      "passed": true,
+      "description": "text / accent: intersection 0.000000 mm3"
+    },
+    {
+      "passed": true,
+      "description": "bottom / base_text: intersection 0.000045 mm3"
+    },
+    {
+      "passed": true,
+      "description": "bottom / base_accent: intersection 0.000680 mm3"
+    },
+    {
+      "passed": true,
+      "description": "base_text / base_accent: intersection 0.000000 mm3"
+    },
+    {
+      "passed": true,
+      "description": "text: all islands have solid backing"
+    },
+    {
+      "passed": true,
+      "description": "text: no overlap with lid body at the colour layer"
+    },
+    {
+      "passed": true,
+      "description": "text: exactly 0.6 mm deep"
+    },
+    {
+      "passed": true,
+      "description": "accent: all islands have solid backing"
+    },
+    {
+      "passed": true,
+      "description": "accent: no overlap with lid body at the colour layer"
+    },
+    {
+      "passed": true,
+      "description": "accent: exactly 0.6 mm deep"
+    },
+    {
+      "passed": true,
+      "description": "base_text: on the bed, exactly 0.6 mm deep"
+    },
+    {
+      "passed": true,
+      "description": "base_text: all islands have solid backing"
+    },
+    {
+      "passed": true,
+      "description": "base_text: no overlap with the base body"
+    },
+    {
+      "passed": true,
+      "description": "base_accent: on the bed, exactly 0.6 mm deep"
+    },
+    {
+      "passed": true,
+      "description": "base_accent: all islands have solid backing"
+    },
+    {
+      "passed": true,
+      "description": "base_accent: no overlap with the base body"
+    },
+    {
+      "passed": true,
+      "description": "base_text / base_accent: colours do not touch"
+    },
+    {
+      "passed": true,
+      "description": "bottom bore at [-73, -39], Z 0.6: 12.995 mm (target 13)"
+    },
+    {
+      "passed": true,
+      "description": "bottom: foot pocket at [-73, -39] is blind, 1.2 mm deep"
+    },
+    {
+      "passed": true,
+      "description": "bottom bore at [-73, 39], Z 0.6: 12.995 mm (target 13)"
+    },
+    {
+      "passed": true,
+      "description": "bottom: foot pocket at [-73, 39] is blind, 1.2 mm deep"
+    },
+    {
+      "passed": true,
+      "description": "bottom bore at [73, -39], Z 0.6: 12.995 mm (target 13)"
+    },
+    {
+      "passed": true,
+      "description": "bottom: foot pocket at [73, -39] is blind, 1.2 mm deep"
+    },
+    {
+      "passed": true,
+      "description": "bottom bore at [73, 39], Z 0.6: 12.995 mm (target 13)"
+    },
+    {
+      "passed": true,
+      "description": "bottom: foot pocket at [73, 39] is blind, 1.2 mm deep"
+    },
+    {
+      "passed": true,
+      "description": "bottom: halftone disk open area 27.1%"
+    },
+    {
+      "passed": true,
+      "description": "bottom: floor openings stay inside the halftone disk (0.0000 mm2)"
+    },
+    {
+      "passed": true,
+      "description": "bottom: vents leave every PCB and magnet post intact []"
+    },
+    {
+      "passed": true,
+      "description": "bottom: side vents open through the long walls"
+    },
+    {
+      "passed": true,
+      "description": "PCB edge to wall/magnet posts: 1.70 mm"
+    },
+    {
+      "passed": true,
+      "description": "provisional speaker front clearance: 4.40 mm"
+    },
+    {
+      "passed": true,
+      "description": "locating lip clearance: 0.300 mm"
+    },
+    {
+      "passed": true,
+      "description": "raised seam leaves solid backing above the lid's locating socket"
+    },
+    {
+      "passed": true,
+      "description": "grille open area within 47.2 mm diameter: 45.9%"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: starts on the bed; window walls keep full height to the seam"
+    },
+    {
+      "passed": true,
+      "description": "fit_test bore at [-75, -35], Z 7.4: 4.198 mm (target 4.2)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: post at [-75, -35] has a blind insert pocket and ends at the PCB underside"
+    },
+    {
+      "passed": true,
+      "description": "fit_test bore at [-75, 35], Z 7.4: 4.198 mm (target 4.2)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: post at [-75, 35] has a blind insert pocket and ends at the PCB underside"
+    },
+    {
+      "passed": true,
+      "description": "fit_test bore at [75, -35], Z 7.4: 4.198 mm (target 4.2)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: post at [75, -35] has a blind insert pocket and ends at the PCB underside"
+    },
+    {
+      "passed": true,
+      "description": "fit_test bore at [75, 35], Z 7.4: 4.198 mm (target 4.2)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: post at [75, 35] has a blind insert pocket and ends at the PCB underside"
+    },
+    {
+      "passed": true,
+      "description": "fit_test bore at (88, 44), Z 3.6: 10.096 mm (target 10.1)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: magnet coupon 10.1 mm is blind, 1.7 mm deep"
+    },
+    {
+      "passed": true,
+      "description": "fit_test bore at (88, 26), Z 3.6: 10.296 mm (target 10.3)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: magnet coupon 10.3 mm is blind, 1.7 mm deep"
+    },
+    {
+      "passed": true,
+      "description": "fit_test bore at (88, 8), Z 3.6: 10.496 mm (target 10.5)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: magnet coupon 10.5 mm is blind, 1.7 mm deep"
+    },
+    {
+      "passed": true,
+      "description": "fit_test bore at (88, -8), Z 7.4: 3.999 mm (target 4)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: insert coupon 4.0 mm has a closed floor"
+    },
+    {
+      "passed": true,
+      "description": "fit_test bore at (88, -22), Z 7.4: 4.198 mm (target 4.2)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: insert coupon 4.2 mm has a closed floor"
+    },
+    {
+      "passed": true,
+      "description": "fit_test bore at (88, -36), Z 7.4: 4.398 mm (target 4.4)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: insert coupon 4.4 mm has a closed floor"
+    },
+    {
+      "passed": true,
+      "description": "fit_test bore at [45, 0], Z 0.8: 32.388 mm (target 32.4)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: posts at case Z 4.2 copy the bottom (0.0000 mm2)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: posts at case Z 9.5 copy the bottom (0.0000 mm2)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: window walls at case Z 17.7 copy the bottom (0.0000 mm2)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: window walls at case Z 28.3 copy the bottom (0.0000 mm2)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: window walls at case Z 26.6 copy the bottom (0.0000 mm2)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: window walls at case Z 36.3 copy the bottom (0.0000 mm2)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: HDMI window matches the case aperture (0.0001 mm2)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: HDMI aperture corridor to PCB edge is clear (0.000185 mm3)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: USB-C window matches the case aperture (0.0000 mm2)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: USB-C aperture corridor to PCB edge is clear (0.000171 mm3)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test / pcb: intersection 0.000000 mm3"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: only the four posts rise under the PCB at Z 2.4 (0.0000 mm2)"
+    },
+    {
+      "passed": true,
+      "description": "fit_test: only the four posts rise under the PCB at Z 8.2 (0.0000 mm2)"
+    }
+  ],
+  "parts": {
+    "bottom": {
+      "extents_mm": [
+        188.0,
+        120.0,
+        39.5
+      ],
+      "volume_cm3": 150.54150710886114
+    },
+    "base_text": {
+      "extents_mm": [
+        58.230743408203125,
+        40.914398193359375,
+        0.6000000238418579
+      ],
+      "volume_cm3": 0.12124110940115414
+    },
+    "base_accent": {
+      "extents_mm": [
+        173.39999389648438,
+        105.39999389648438,
+        0.6000000238418579
+      ],
+      "volume_cm3": 1.0888787678854785
+    },
+    "lid": {
+      "extents_mm": [
+        188.0,
+        120.0,
+        7.349998474121094
+      ],
+      "volume_cm3": 72.99649324321332
+    },
+    "text": {
+      "extents_mm": [
+        58.230743408203125,
+        25.323394775390625,
+        0.5999984741210938
+      ],
+      "volume_cm3": 0.10313320548862903
+    },
+    "accent": {
+      "extents_mm": [
+        175.5999755859375,
+        107.5999755859375,
+        0.5999984741210938
+      ],
+      "volume_cm3": 0.562815888248436
+    },
+    "bridge": {
+      "extents_mm": [
+        57.599998474121094,
+        79.19999694824219,
+        13.800000190734863
+      ],
+      "volume_cm3": 5.3919810053534505
+    },
+    "fit_test": {
+      "extents_mm": [
+        198.0,
+        120.0,
+        34.90000209808352
+      ],
+      "volume_cm3": 27.308075712136457
+    },
+    "pcb": {
+      "extents_mm": [
+        160.0,
+        80.0,
+        1.5999994277954102
+      ],
+      "volume_cm3": 20.421927297399115
+    },
+    "speaker": {
+      "extents_mm": [
+        50.0,
+        50.0,
+        19.000001907348633
+      ],
+      "volume_cm3": 23.353103981570648
+    }
+  }
+}

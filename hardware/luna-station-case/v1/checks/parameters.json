@@ -1,0 +1,206 @@
+{
+  "case_xy": [
+    188,
+    120
+  ],
+  "total_h": 44,
+  "base_h": 36.5,
+  "lid_z": 36.65,
+  "floor_t": 3.2,
+  "roof_z": 40.8,
+  "wall": 3.2,
+  "pcb": [
+    160,
+    80
+  ],
+  "board_z": 10,
+  "pcb_top": 11.6,
+  "pcb_hole_d": 3.4,
+  "holes": [
+    [
+      -75,
+      -35
+    ],
+    [
+      -75,
+      35
+    ],
+    [
+      75,
+      -35
+    ],
+    [
+      75,
+      35
+    ]
+  ],
+  "insert_bore": 4.2,
+  "insert_depth": 5.4,
+  "magnets": [
+    [
+      -40,
+      -49.5
+    ],
+    [
+      -40,
+      49.5
+    ],
+    [
+      60,
+      -49.5
+    ],
+    [
+      60,
+      49.5
+    ]
+  ],
+  "magnet_d": 10,
+  "magnet_t": 1.5,
+  "magnet_depth": 1.7,
+  "magnet_bore": 10.3,
+  "lip_h": 3,
+  "fit_gap": 0.3,
+  "inlay_depth": 0.6,
+  "speaker_xy": [
+    45,
+    0
+  ],
+  "speaker_magnet_d": 32,
+  "speaker_bore": 32.4,
+  "speaker_outer_d": 50,
+  "bridge_z": 22.2,
+  "bridge_top": 25.4,
+  "bridge_feet": [
+    [
+      75,
+      -35
+    ],
+    [
+      75,
+      35
+    ]
+  ],
+  "bolt_d": 3.4,
+  "component_h": 17,
+  "ports": [
+    [
+      "HDMI",
+      1,
+      -64.25,
+      28.3,
+      [
+        23,
+        11.5
+      ],
+      1.5
+    ],
+    [
+      "USB-C",
+      -1,
+      -64.25,
+      26.6,
+      [
+        14,
+        7.5
+      ],
+      1.5
+    ]
+  ],
+  "port_bevel": 0.6,
+  "port_measurements": [
+    [
+      "HDMI",
+      [
+        22,
+        10.5
+      ],
+      16.7,
+      15.75
+    ],
+    [
+      "USB-C",
+      [
+        13,
+        6.5
+      ],
+      15,
+      15.75
+    ]
+  ],
+  "port_clearance": 0.5,
+  "fit_cut": 1.6,
+  "fit_floor": 1.6,
+  "fit_wall_x": [
+    -86,
+    -48.5
+  ],
+  "fit_wall_y": 36,
+  "fit_coupon_x": 88,
+  "fit_magnet_y": [
+    44,
+    26,
+    8
+  ],
+  "fit_magnet_d": [
+    10.1,
+    10.3,
+    10.5
+  ],
+  "fit_insert_y": [
+    -8,
+    -22,
+    -36
+  ],
+  "fit_insert_d": [
+    4,
+    4.2,
+    4.4
+  ],
+  "fit_magnet_pad": 2.7,
+  "fit_gusset": [
+    2,
+    12,
+    14
+  ],
+  "fit_text_h": 0.6,
+  "magnet_boss_d": 15.6,
+  "boss_d": 9.2,
+  "base_style": 3,
+  "feet": [
+    [
+      -73,
+      -39
+    ],
+    [
+      -73,
+      39
+    ],
+    [
+      73,
+      -39
+    ],
+    [
+      73,
+      39
+    ]
+  ],
+  "foot_d": 13,
+  "foot_depth": 1.2,
+  "moon_r": 31,
+  "moon_ring": [
+    32.6,
+    33.8
+  ],
+  "moon_d": [
+    1.6,
+    5.4
+  ],
+  "vent_x": [
+    -26,
+    46
+  ],
+  "vent_z": [
+    6,
+    21
+  ]
+}

@@ -1,0 +1,20 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+build/
+
+# Local and generated material not part of the public console sources.
+/combined.html
+/result.json
+/hardware/flash-backup/
+/hardware/releases/
+/index.html
+/photos/wr-960.jpeg
+
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx

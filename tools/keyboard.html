@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luna9 - управление</title>
+<style>
+  :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #06121e; color: #d7f3ff; }
+  body { max-width: 760px; margin: 8vh auto; padding: 24px; }
+  h1 { font-size: 44px; margin-bottom: 12px; color: #7ef7c0; }
+  p { line-height: 1.65; }
+  #status { padding: 16px; border: 1px solid #264457; border-radius: 12px; color: #ffd451; }
+  .keys { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 32px 0; }
+  button { border: 1px solid #36566b; color: inherit; background: #102a38; border-radius: 12px;
+    padding: 24px 8px; font-size: 18px; touch-action: none; user-select: none; }
+  button.active { background: #1b715c; border-color: #7ef7c0; }
+  button[data-mask="8"] { grid-column: 1 / -1; padding: 14px; }
+  small { color: #90b2c7; }
+</style>
+<body>
+<h1>LUNA9</h1>
+<p>Игра отображается на HDMI-мониторе. Эта страница передаёт кнопки плате через USB-UART.</p>
+<div id="status" role="status">Подключение…</div>
+<section>
+  <h2>Обновление игры по USB</h2>
+  <input id="image" type="file" accept=".bin,.BIN">
+  <button id="upload" type="button">Обновить игру</button>
+  <p id="update-status" role="status">Выберите LUNAR.BIN. На время обновления игра остановится.</p>
+  <small>Нужны новый FPGA-загрузчик и заранее подготовленные UPDATEA.BIN/UPDATEB.BIN.
+    Не отключайте питание во время записи. FPGA flash не изменяется.</small>
+</section>
+<div class="keys">
+  <button data-mask="1">A / ←<br>LEFT</button>
+  <button data-mask="2">W / ↑ / Space<br>THRUST</button>
+  <button data-mask="4">D / →<br>RIGHT</button>
+  <button data-mask="8">B / Escape — MENU / BACK</button>
+</div>
+<p>Нажмите <b>W</b>, чтобы начать. Удерживайте W для тяги, A/D — поворот.
+  B открывает подтверждение выхода: W — выйти, B — продолжить.</p>
+<small>При потере фокуса кнопки отпускаются. Если связь пропадёт, плата сама отпустит их через 250 мс.
+  Закройте serial terminal перед запуском моста.</small>
+<script>
+  const keys = new Map([["KeyA", 1], ["ArrowLeft", 1], ["KeyW", 2], ["ArrowUp", 2],
+    ["Space", 2], ["KeyD", 4], ["ArrowRight", 4], ["KeyB", 8], ["Escape", 8]]);
+  const pressed = new Map();
+  const status = document.querySelector("#status");
+  let sequence = Date.now(), inputError = "", updating = false;
+  const buttons = [...document.querySelectorAll("button[data-mask]")];
+  const uploadButton = document.querySelector("#upload");
+  const updateStatus = document.querySelector("#update-status");
+  const mask = () => [...pressed.values()].reduce((a, b) => a | b, 0);
+  async function send() {
+    if (updating) { pressed.clear(); return; }
+    sequence = Math.max(sequence + 1, Date.now());
+    const value = mask();
+    buttons.forEach(button => button.classList.toggle("active", !!(value & Number(button.dataset.mask))));
+    try {
+      const response = await fetch("/input", { method: "POST",
+        headers: { "Content-Type": "application/json" }, body: JSON.stringify({ mask: value, sequence }) });
+      if (!response.ok && response.status !== 409 && response.status !== 423)
+        throw new Error(`USB-UART: HTTP ${response.status}`);
+      if (response.ok) inputError = "";
+    } catch (error) {
+      inputError = error.message;
+      pressed.clear();
+    }
+  }
+  function release() { pressed.clear(); void send(); }
+  window.addEventListener("keydown", event => {
+    if (!keys.has(event.code)) return;
+    event.preventDefault();
+    if (!updating) pressed.set(event.code, keys.get(event.code));
+    void send();
+  });
+  uploadButton.addEventListener("click", async () => {
+    const file = document.querySelector("#image").files[0];
+    if (!file) { updateStatus.textContent = "Сначала выберите LUNAR.BIN"; return; }
+    if (file.size < 36 || file.size > 7200) {
+      updateStatus.textContent = "Неверный размер образа (36–7200 байт)"; return;
+    }
+    pressed.clear();
+    await send();
+    updating = true;
+    uploadButton.disabled = true;
+    try {
+      const response = await fetch("/update", { method: "POST",
+        headers: { "Content-Type": "application/octet-stream" }, body: await file.arrayBuffer() });
+      if (!response.ok) throw new Error(`HTTP ${response.status}: ${await response.text()}`);
+      updateStatus.textContent = "Передача началась…";
+    } catch (error) {
+      updating = false; uploadButton.disabled = false;
+      updateStatus.textContent = `Обновление не началось: ${error.message}`;
+    }
+  });
+  window.addEventListener("keyup", event => {
+    if (!keys.has(event.code)) return;
+    event.preventDefault();
+    pressed.delete(event.code);
+    void send();
+  });
+  window.addEventListener("blur", release);
+  document.addEventListener("visibilitychange", () => { if (document.hidden) release(); });
+  for (const button of buttons) {
+    button.addEventListener("pointerdown", event => {
+      button.setPointerCapture(event.pointerId);
+      pressed.set(`pointer-${event.pointerId}`, Number(button.dataset.mask));
+      void send();
+    });
+    for (const name of ["pointerup", "pointercancel", "lostpointercapture"]) {
+      button.addEventListener(name, event => {
+        pressed.delete(`pointer-${event.pointerId}`);
+        void send();
+      });
+    }
+  }
+  setInterval(() => { if (!document.hidden) void send(); }, 100);
+  setInterval(async () => {
+    try {
+      const response = await fetch("/status", { cache: "no-store" });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const data = await response.json();
+      updating = data.updating;
+      uploadButton.disabled = updating;
+      buttons.forEach(button => { button.disabled = updating; });
+      if (data.update_result) updateStatus.textContent = data.update_result;
+      if (updating) pressed.clear();
+      const fresh = data.connected && data.age !== null && data.age < 3;
+      status.textContent = inputError || (fresh ? `Плата: ${data.report} · кнопки ${data.mask}` :
+        `${data.report} · ожидается свежий UART-ответ`);
+      status.style.color = !inputError && fresh && data.report === "PASS" ? "#7ef7c0" : "#ffd451";
+    } catch (error) {
+      status.textContent = `Мост недоступен: ${error.message}`;
+      pressed.clear();
+    }
+  }, 500);
+  void send();
+</script>
+</body>
+</html>

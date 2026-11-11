@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="960" viewBox="0 0 1400 960">
+  <rect width="1400" height="960" fill="#071521"/>
+  <g font-family="DejaVu Sans, sans-serif">
+    <text x="60" y="62" fill="#bff8e4" font-size="32" font-weight="bold">LUNAR LANDER - FOUR-BUTTON WIRING</text>
+    <text x="60" y="100" fill="#b8d0df" font-size="19">Tang Nano 9K / board 3674 / normally-open switches / active LOW</text>
+    <rect x="60" y="125" width="1280" height="58" rx="8" fill="#4a3215" stroke="#f6c15e"/>
+    <text x="80" y="162" fill="#ffe0a2" font-size="22" font-weight="bold">PROPOSED PIN ASSIGNMENTS - NOT ENABLED IN THE CURRENT FPGA IMAGE</text>
+    <rect x="70" y="218" width="370" height="520" rx="12" fill="#102b3b" stroke="#49748a" stroke-width="2"/>
+    <text x="100" y="259" fill="#d9f3ff" font-size="24" font-weight="bold">FPGA CONNECTOR SIGNALS</text>
+    <text x="100" y="291" fill="#91b9ce" font-size="17">Header pin is NOT the FPGA package pin.</text>
+    <g font-size="21" fill="#d9f3ff">
+      <text x="100" y="355">J5 pin 5 / FPGA 25 / LEFT</text>
+      <text x="100" y="455">J5 pin 6 / FPGA 26 / THRUST</text>
+      <text x="100" y="555">J5 pin 7 / FPGA 27 / RIGHT</text>
+      <text x="100" y="655">J5 pin 8 / FPGA 28 / MENU</text>
+    </g>
+    <text x="100" y="706" fill="#91b9ce" font-size="18">Bank 2 / VCCO = 3.3 V / input only</text>
+    <g stroke-width="3" fill="none">
+      <path d="M800 232H1120" stroke="#ffce73"/>
+      <path d="M800 232V280 M800 280l-8 7 16 10-16 10 16 10-16 10 8 7V350" stroke="#ffce73"/>
+      <path d="M900 232V380 M900 380l-8 7 16 10-16 10 16 10-16 10 8 7V450" stroke="#ffce73"/>
+      <path d="M1000 232V480 M1000 480l-8 7 16 10-16 10 16 10-16 10 8 7V550" stroke="#ffce73"/>
+      <path d="M1100 232V580 M1100 580l-8 7 16 10-16 10 16 10-16 10 8 7V650" stroke="#ffce73"/>
+      <path d="M440 350H570l7-8 10 16 10-16 10 16 10-16 7 8H1180" stroke="#7cf0bc"/>
+      <path d="M440 450H570l7-8 10 16 10-16 10 16 10-16 7 8H1180" stroke="#62d8ff"/>
+      <path d="M440 550H570l7-8 10 16 10-16 10 16 10-16 7 8H1180" stroke="#c6a9ff"/>
+      <path d="M440 650H570l7-8 10 16 10-16 10 16 10-16 7 8H1180" stroke="#ff9caf"/>
+      <path d="M1210 350H1280V750H490 M1210 450H1280 M1210 550H1280 M1210 650H1280" stroke="#d3e2e8"/>
+      <path d="M1180 350l25-16 M1180 450l25-16 M1180 550l25-16 M1180 650l25-16" stroke="#d3e2e8"/>
+      <path d="M1194 319h24 M1194 419h24 M1194 519h24 M1194 619h24" stroke="#d3e2e8"/>
+    </g>
+    <g fill="#ffce73" font-size="18">
+      <text x="805" y="218">J6 pin 24 / +3V3 (board supply)</text>
+      <text x="816" y="313">10k</text><text x="916" y="413">10k</text>
+      <text x="1016" y="513">10k</text><text x="1116" y="613">10k</text>
+    </g>
+    <g fill="#d9f3ff" font-size="18">
+      <text x="570" y="332">1k series</text><text x="570" y="432">1k series</text>
+      <text x="570" y="532">1k series</text><text x="570" y="632">1k series</text>
+      <text x="1160" y="300">LEFT</text><text x="1160" y="400">THRUST</text>
+      <text x="1160" y="500">RIGHT</text><text x="1160" y="600">MENU</text>
+      <text x="720" y="780">J6 pin 23 / GND - common return for all four switches</text>
+    </g>
+    <g fill="#d9f3ff">
+      <circle cx="800" cy="350" r="5"/><circle cx="900" cy="450" r="5"/>
+      <circle cx="1000" cy="550" r="5"/><circle cx="1100" cy="650" r="5"/>
+    </g>
+    <g font-size="20" fill="#b8d0df">
+      <text x="70" y="827">Released: input HIGH. Pressed: switch connects input to GND (LOW).</text>
+      <text x="70" y="861">Power OFF before wiring. Do not use 5 V, 1.8 V pins, S1/S2, HDMI, SD, UART or flash signals.</text>
+      <text x="70" y="895">Check switch contacts with a meter: four-leg tactile switches have internally connected pairs.</text>
+      <text x="70" y="929">Schematic reference: official 3674 PDF / GW1NR 9K sheet / J5, J6, Bank 2.</text>
+    </g>
+  </g>
+</svg>

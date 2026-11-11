@@ -1,0 +1,126 @@
+exported stl/bottom.stl
+exported stl/lid.stl
+exported stl/text.stl
+exported stl/accent.stl
+exported stl/bridge.stl
+exported checks/pcb.stl
+exported checks/speaker.stl
+exported checks/parameters.echo
+PASS bottom: watertight, consistently oriented, positive volume
+PASS bottom: one connected solid
+PASS lid: watertight, consistently oriented, positive volume
+PASS lid: one connected solid
+PASS text: watertight, consistently oriented, positive volume
+PASS accent: watertight, consistently oriented, positive volume
+PASS bridge: watertight, consistently oriented, positive volume
+PASS bridge: one connected solid
+PASS pcb: watertight, consistently oriented, positive volume
+PASS speaker: watertight, consistently oriented, positive volume
+PASS bottom extents match the CAD parameters, including lip
+PASS assembled height matches the CAD parameters
+PASS PCB is 160 x 80 mm
+PASS bottom bore at [-75, -35], Z 9: 4.198 mm (target 4.2)
+PASS M3 insert pocket at [-75, -35] has a closed floor
+PASS pcb bore at [-75, -35], Z 10.5: 3.399 mm (target 3.4)
+PASS bottom bore at [-75, 35], Z 9: 4.198 mm (target 4.2)
+PASS M3 insert pocket at [-75, 35] has a closed floor
+PASS pcb bore at [-75, 35], Z 10.5: 3.399 mm (target 3.4)
+PASS bottom bore at [75, -35], Z 9: 4.198 mm (target 4.2)
+PASS M3 insert pocket at [75, -35] has a closed floor
+PASS pcb bore at [75, -35], Z 10.5: 3.399 mm (target 3.4)
+PASS bottom bore at [75, 35], Z 9: 4.198 mm (target 4.2)
+PASS M3 insert pocket at [75, 35] has a closed floor
+PASS pcb bore at [75, 35], Z 10.5: 3.399 mm (target 3.4)
+PASS bottom bore at [-40, -49.5], Z 35.8: 10.296 mm (target 10.3)
+PASS lid bore at [-40, -49.5], Z 37.35: 10.296 mm (target 10.3)
+PASS paired magnet pockets at [-40, -49.5] are blind
+PASS 10 mm magnet fits the lower pocket at [-40, -49.5]
+PASS bottom bore at [-40, 49.5], Z 35.8: 10.296 mm (target 10.3)
+PASS lid bore at [-40, 49.5], Z 37.35: 10.296 mm (target 10.3)
+PASS paired magnet pockets at [-40, 49.5] are blind
+PASS 10 mm magnet fits the lower pocket at [-40, 49.5]
+PASS bottom bore at [60, -49.5], Z 35.8: 10.296 mm (target 10.3)
+PASS lid bore at [60, -49.5], Z 37.35: 10.296 mm (target 10.3)
+PASS paired magnet pockets at [60, -49.5] are blind
+PASS 10 mm magnet fits the lower pocket at [60, -49.5]
+PASS bottom bore at [60, 49.5], Z 35.8: 10.296 mm (target 10.3)
+PASS lid bore at [60, 49.5], Z 37.35: 10.296 mm (target 10.3)
+PASS paired magnet pockets at [60, 49.5] are blind
+PASS 10 mm magnet fits the lower pocket at [60, 49.5]
+PASS HDMI: centre follows measured PCB-relative offsets
+PASS HDMI: 0.5 mm clearance per side of measured plug
+PASS HDMI: correct wall in the top view with readable text (HDMI +Y, USB-C -Y)
+PASS HDMI: rounded corners do not clip the measured rectangular plug envelope
+PASS HDMI: side-wall aperture [23.0, 11.5] mm (target 23 x 11.5)
+PASS HDMI: rounded throat matches its complete specified profile
+PASS HDMI: clear from exterior to PCB edge at depth 0.05 mm
+PASS HDMI: clear from exterior to PCB edge at depth 1.6 mm
+PASS HDMI: clear from exterior to PCB edge at depth 3.3 mm
+PASS HDMI: clear from exterior to PCB edge at depth 10.5 mm
+PASS HDMI: clear from exterior to PCB edge at depth 19.9 mm
+PASS HDMI: exterior lead-in bevel opens outwards
+PASS HDMI: 1.85 mm web beneath seam; locating lip is continuous
+PASS HDMI: entire aperture corridor to PCB edge clears bottom (0.000193 mm3)
+PASS HDMI: entire aperture corridor to PCB edge clears lid (0.000000 mm3)
+PASS HDMI: entire aperture corridor to PCB edge clears bridge (0.000000 mm3)
+PASS USB-C: centre follows measured PCB-relative offsets
+PASS USB-C: 0.5 mm clearance per side of measured plug
+PASS USB-C: correct wall in the top view with readable text (HDMI +Y, USB-C -Y)
+PASS USB-C: rounded corners do not clip the measured rectangular plug envelope
+PASS USB-C: side-wall aperture [14.0, 7.5] mm (target 14 x 7.5)
+PASS USB-C: rounded throat matches its complete specified profile
+PASS USB-C: clear from exterior to PCB edge at depth 0.05 mm
+PASS USB-C: clear from exterior to PCB edge at depth 1.6 mm
+PASS USB-C: clear from exterior to PCB edge at depth 3.3 mm
+PASS USB-C: clear from exterior to PCB edge at depth 10.5 mm
+PASS USB-C: clear from exterior to PCB edge at depth 19.9 mm
+PASS USB-C: exterior lead-in bevel opens outwards
+PASS USB-C: 5.55 mm web beneath seam; locating lip is continuous
+PASS USB-C: entire aperture corridor to PCB edge clears bottom (0.000188 mm3)
+PASS USB-C: entire aperture corridor to PCB edge clears lid (0.000000 mm3)
+PASS USB-C: entire aperture corridor to PCB edge clears bridge (0.000000 mm3)
+PASS bridge bore at [45, 0], Z 24.4: 32.388 mm (target 32.4)
+PASS bridge bore at [75, -35], Z 12.6: 3.399 mm (target 3.4)
+PASS bridge bore at [75, -35], Z 24.4: 3.399 mm (target 3.4)
+PASS bridge bore at [75, 35], Z 12.6: 3.399 mm (target 3.4)
+PASS bridge bore at [75, 35], Z 24.4: 3.399 mm (target 3.4)
+PASS bottom / lid: intersection 0.000000 mm3
+PASS bottom / pcb: intersection 0.000000 mm3
+PASS bottom / bridge: intersection 0.000000 mm3
+PASS lid / pcb: intersection 0.000000 mm3
+PASS lid / bridge: intersection 0.000000 mm3
+PASS bridge / pcb: intersection 0.000000 mm3
+PASS speaker / bottom: intersection 0.000000 mm3
+PASS speaker / lid: intersection 0.000000 mm3
+PASS speaker / bridge: intersection 0.000000 mm3
+PASS speaker / pcb: intersection 0.000000 mm3
+PASS lid / text: intersection 0.000000 mm3
+PASS lid / accent: intersection 0.000000 mm3
+PASS text / accent: intersection 0.000000 mm3
+PASS text: all islands have solid backing
+PASS text: no overlap with lid body at the colour layer
+PASS text: exactly 0.6 mm deep
+PASS accent: all islands have solid backing
+PASS accent: no overlap with lid body at the colour layer
+PASS accent: exactly 0.6 mm deep
+PASS PCB edge to wall/magnet posts: 1.70 mm
+PASS provisional speaker front clearance: 4.40 mm
+PASS locating lip clearance: 0.300 mm
+PASS raised seam leaves solid backing above the lid's locating socket
+PASS grille open area within 47.2 mm diameter: 45.9%
+exported luna_station_1_concept.3mf
+exported luna_station_2_concept.3mf
+exported luna_station_3_concept.3mf
+exported previews/variant_1_iso.png
+exported previews/variant_1_top.png
+exported previews/variant_2_iso.png
+exported previews/variant_2_top.png
+exported previews/variant_3_iso.png
+exported previews/variant_3_top.png
+exported previews/inside.png
+exported previews/exploded.png
+exported previews/section.png
+exported previews/bridge.png
+exported previews/port_top.png
+exported previews/port_hdmi.png
+exported previews/port_usb_c.png

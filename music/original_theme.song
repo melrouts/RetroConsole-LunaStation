@@ -1,0 +1,20 @@
+# Lunar Lander ESP32 music, simplified text format.
+# Lines starting with '#' are comments. Note names use C4 = MIDI 60;
+# sharps use '#', flats 'b'.
+format LLSONG 1
+title Original space theme
+bpm 120
+# One lead step is an eighth note (0.25 s at 120 BPM).
+step 1/8
+# One chord per 2 bars (8 beats). 'm' = minor, otherwise major.
+# The ESP32 builds bass, a three-note pad and a 16th-note arpeggio from these.
+chords D3m Bb2 F2 C3 G2m Bb2 D3m A2
+# Lead melody: one line = 2 bars = 16 steps; '.' = rest.
+lead D5 . F5 A5 G5 F5 D5 . C5 D5 F5 . E5 D5 C5 A4
+lead Bb4 . D5 F5 E5 D5 Bb4 . A4 Bb4 D5 . C5 Bb4 A4 F4
+lead A4 . C5 F5 E5 C5 A4 . G4 A4 C5 . D5 C5 A4 G4
+lead C5 . E5 G5 F5 E5 C5 . A4 C5 E5 . D5 C5 A4 G4
+lead G4 . Bb4 D5 C5 Bb4 G4 . F4 G4 Bb4 . A4 G4 F4 D4
+lead Bb4 D5 F5 . A5 G5 F5 D5 Bb4 . D5 F5 E5 D5 Bb4 .
+lead D5 F5 A5 C6 Bb5 A5 F5 D5 E5 F5 A5 . G5 F5 D5 C5
+lead C#5 . E5 A5 G5 E5 C#5 A4 B4 C#5 E5 . F#5 E5 C#5 A4

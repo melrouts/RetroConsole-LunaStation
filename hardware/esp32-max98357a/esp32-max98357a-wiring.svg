@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1220" viewBox="0 0 1600 1220" role="img" aria-labelledby="title description">
+  <title id="title">ESP32-WROOM-32 и MAX98357A (HW-792): звук по I2S</title>
+  <desc id="description">Приёмник ESP32 передаёт цифровой звук по I2S: GPIO32 на BCLK, GPIO25 на LRC, GPIO22 на DIN. Модуль питается от 5 В, земля общая. Динамик подключается между выходами плюс и минус модуля.</desc>
+  <style>
+    text { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #202b39; }
+    .title { font-size: 34px; font-weight: 700; }
+    .subtitle { font-size: 22px; fill: #526174; }
+    .heading { font-size: 25px; font-weight: 700; }
+    .label { font-size: 21px; }
+    .small { font-size: 18px; }
+    .bold { font-weight: 700; }
+    .mono { font-family: Menlo, Consolas, monospace; }
+    .c-bclk { fill: #1762b0; } .c-lrc { fill: #2a8a4a; } .c-din { fill: #c06a00; }
+    .power { fill: #b42c2c; } .muted { fill: #7a8696; }
+    .w { fill: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+    .w-bclk { stroke: #1762b0; } .w-lrc { stroke: #2a8a4a; } .w-din { stroke: #c06a00; }
+    .w-5v { stroke: #b42c2c; } .w-gnd { stroke: #263545; } .w-spk { stroke: #6b3fa0; }
+    .box { fill: #fff; stroke: #bdc9d7; stroke-width: 2; }
+    .pin { fill: #fff; stroke: #263545; stroke-width: 3; }
+    .nc { fill: #fff; stroke: #9aa6b4; stroke-width: 3; stroke-dasharray: 5 4; }
+  </style>
+
+  <rect width="1600" height="1220" fill="#f7f9fc"/>
+  <text x="50" y="58" class="title">ESP32-WROOM-32 + MAX98357A (HW-792): звук по I²S</text>
+  <text x="50" y="93" class="subtitle">ESP32-приёмник · цифровой моно-усилитель класса D · один динамик 4–8 Ом</text>
+
+  <rect x="50" y="115" width="1500" height="660" rx="12" class="box"/>
+  <text x="75" y="155" class="heading">1. Соединения</text>
+
+  <!-- ESP32 -->
+  <rect x="90" y="190" width="330" height="540" rx="12" fill="#eef5ff" stroke="#8bb4e1" stroke-width="2"/>
+  <text x="115" y="230" class="label bold">ESP32-WROOM-32</text>
+  <text x="115" y="257" class="small muted">приёмник ESP-NOW</text>
+  <text x="400" y="315" text-anchor="end" class="label bold c-bclk">GPIO32 · BCLK</text>
+  <text x="400" y="385" text-anchor="end" class="label bold c-lrc">GPIO25 · WS/LRC</text>
+  <text x="400" y="455" text-anchor="end" class="label bold c-din">GPIO22 · DOUT</text>
+  <text x="400" y="595" text-anchor="end" class="label bold power">5V (VIN)</text>
+  <text x="400" y="665" text-anchor="end" class="label bold">GND</text>
+  <text x="115" y="520" class="small muted">заняты: 16/17 UART↔Tang,</text>
+  <text x="115" y="543" class="small muted">2 — светодиод</text>
+  <circle cx="420" cy="308" r="8" class="pin"/>
+  <circle cx="420" cy="378" r="8" class="pin"/>
+  <circle cx="420" cy="448" r="8" class="pin"/>
+  <circle cx="420" cy="588" r="8" class="pin"/>
+  <circle cx="420" cy="658" r="8" class="pin"/>
+
+  <!-- MAX98357A -->
+  <rect x="900" y="190" width="330" height="540" rx="12" fill="#f1ecfa" stroke="#a88fd0" stroke-width="2"/>
+  <text x="1065" y="230" text-anchor="middle" class="heading">MAX98357A</text>
+  <text x="1065" y="257" text-anchor="middle" class="small muted">модуль HW-792, I²S моно</text>
+  <text x="920" y="315" class="label bold c-bclk">BCLK</text>
+  <text x="920" y="385" class="label bold c-lrc">LRC</text>
+  <text x="920" y="455" class="label bold c-din">DIN</text>
+  <text x="920" y="520" class="label muted">GAIN — не подключать</text>
+  <text x="920" y="550" class="label muted">SD — не подключать</text>
+  <text x="920" y="595" class="label bold power">Vin</text>
+  <text x="920" y="665" class="label bold">GND</text>
+  <circle cx="900" cy="308" r="8" class="pin"/>
+  <circle cx="900" cy="378" r="8" class="pin"/>
+  <circle cx="900" cy="448" r="8" class="pin"/>
+  <circle cx="900" cy="513" r="8" class="nc"/>
+  <circle cx="900" cy="543" r="8" class="nc"/>
+  <circle cx="900" cy="588" r="8" class="pin"/>
+  <circle cx="900" cy="658" r="8" class="pin"/>
+  <text x="1215" y="300" text-anchor="end" class="label bold">+</text>
+  <text x="1215" y="400" text-anchor="end" class="label bold">−</text>
+  <circle cx="1230" cy="293" r="8" class="pin"/>
+  <circle cx="1230" cy="393" r="8" class="pin"/>
+
+  <!-- signal wires -->
+  <path class="w w-bclk" d="M428 308 H892"/>
+  <path class="w w-lrc" d="M428 378 H892"/>
+  <path class="w w-din" d="M428 448 H892"/>
+  <text x="660" y="298" text-anchor="middle" class="small c-bclk">битовый такт</text>
+  <text x="660" y="368" text-anchor="middle" class="small c-lrc">выбор канала L/R</text>
+  <text x="660" y="438" text-anchor="middle" class="small c-din">данные звука</text>
+
+  <!-- power -->
+  <path class="w w-5v" d="M428 588 H892"/>
+  <path class="w w-gnd" d="M428 658 H892"/>
+  <text x="660" y="578" text-anchor="middle" class="small power">+5 В от общего источника / USB</text>
+  <text x="660" y="648" text-anchor="middle" class="small">общая земля</text>
+  <!-- decoupling cap -->
+  <path class="w w-5v" d="M780 588 V606"/>
+  <line x1="760" y1="606" x2="800" y2="606" stroke="#263545" stroke-width="4"/>
+  <line x1="760" y1="616" x2="800" y2="616" stroke="#263545" stroke-width="4"/>
+  <path class="w w-gnd" d="M780 616 V658"/>
+  <text x="748" y="620" text-anchor="end" class="small">10–100 µF*</text>
+
+  <!-- speaker -->
+  <path class="w w-spk" d="M1238 293 H1340 V315"/>
+  <path class="w w-spk" d="M1238 393 H1340 V375"/>
+  <rect x="1325" y="315" width="30" height="60" fill="#fff" stroke="#263545" stroke-width="3"/>
+  <path d="M1355 315 L1400 280 V410 L1355 375 Z" fill="#fff" stroke="#263545" stroke-width="3"/>
+  <text x="1420" y="335" class="label bold">Динамик</text>
+  <text x="1420" y="362" class="small">4–8 Ом</text>
+  <text x="1420" y="386" class="small">≥ 2 Вт лучше</text>
+  <text x="1250" y="460" class="small">Выход мостовой:</text>
+  <text x="1250" y="484" class="small bold" fill="#9c2929">«−» не соединять с GND</text>
+
+  <!-- notes -->
+  <rect x="50" y="795" width="740" height="395" rx="12" class="box"/>
+  <text x="75" y="835" class="heading">2. Таблица проводов</text>
+  <text x="75" y="878" class="label bold">ESP32</text><text x="320" y="878" class="label bold">MAX98357A</text><text x="530" y="878" class="label bold">Назначение</text>
+  <line x1="75" y1="892" x2="765" y2="892" stroke="#bdc9d7" stroke-width="2"/>
+  <text x="75" y="925" class="label mono c-bclk">GPIO32</text><text x="320" y="925" class="label mono">BCLK</text><text x="530" y="925" class="label">I²S такт</text>
+  <text x="75" y="960" class="label mono c-lrc">GPIO25</text><text x="320" y="960" class="label mono">LRC</text><text x="530" y="960" class="label">I²S WS</text>
+  <text x="75" y="995" class="label mono c-din">GPIO22</text><text x="320" y="995" class="label mono">DIN</text><text x="530" y="995" class="label">I²S данные</text>
+  <text x="75" y="1030" class="label mono power">5V / VIN</text><text x="320" y="1030" class="label mono">Vin</text><text x="530" y="1030" class="label">питание 2,5–5,5 В</text>
+  <text x="75" y="1065" class="label mono">GND</text><text x="320" y="1065" class="label mono">GND</text><text x="530" y="1065" class="label">общая земля</text>
+  <text x="75" y="1100" class="label mono muted">—</text><text x="320" y="1100" class="label mono muted">GAIN, SD</text><text x="530" y="1100" class="label muted">свободны</text>
+  <text x="75" y="1150" class="small muted">Провода I²S — короткие, до ~15 см. * Конденсатор у Vin — по желанию.</text>
+
+  <rect x="810" y="795" width="740" height="395" rx="12" class="box"/>
+  <text x="835" y="835" class="heading">3. Настройки модуля</text>
+  <text x="835" y="878" class="label bold">GAIN (усиление):</text>
+  <text x="855" y="910" class="small">не подключён → 9 dB (по умолчанию, надпись на плате)</text>
+  <text x="855" y="937" class="small">к Vin → 6 dB · через 100 кОм к Vin → 3 dB</text>
+  <text x="855" y="964" class="small">к GND → 12 dB · через 100 кОм к GND → 15 dB</text>
+  <text x="835" y="1010" class="label bold">SD (канал / выключение):</text>
+  <text x="855" y="1042" class="small">не подключён → (L+R)/2, моно-смесь (резистор 105 = 1 МОм)</text>
+  <text x="855" y="1069" class="small">к GND → усилитель выключен (можно GPIO для mute)</text>
+  <text x="835" y="1115" class="label bold">Громкость:</text>
+  <text x="855" y="1147" class="small">регулируется в прошивке амплитудой сэмплов;</text>
+  <text x="855" y="1174" class="small">начинать с малой громкости. Данные: 16 бит, I²S Philips.</text>
+</svg>

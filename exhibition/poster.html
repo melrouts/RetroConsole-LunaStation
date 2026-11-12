@@ -28,17 +28,17 @@ h1 span { color: var(--mint); }
 main { flex: 1; padding: 5.5mm 12mm 0; display: grid; grid-template-columns: 1fr 1fr; column-gap: 8mm; }
 h2 { font-family: "Pixel"; font-size: 9pt; color: var(--navy); margin: 0 0 2.5mm; display: flex; align-items: center; gap: 2.5mm; }
 h2::before { content: ""; width: 3mm; height: 3mm; background: var(--mint); border: .4mm solid var(--navy); flex: none; }
-p { font-size: 10.2pt; line-height: 1.4; margin-bottom: 3.2mm; }
+p { font-size: 10.8pt; line-height: 1.4; margin-bottom: 3.2mm; }
 b { font-weight: 700; }
-.lead { font-size: 11.3pt; line-height: 1.38; font-weight: 500; }
-ul.spec { list-style: none; font-size: 9.3pt; line-height: 1.3; margin-bottom: 3.2mm; }
+.lead { font-size: 11.6pt; line-height: 1.38; font-weight: 500; }
+ul.spec { list-style: none; font-size: 10pt; line-height: 1.3; margin-bottom: 3.2mm; }
 ul.spec li { padding: 1.1mm 0; border-bottom: .25mm dashed #b7c6d6; display: flex; gap: 3mm; }
 ul.spec li i { font-style: normal; font-family: "Pixel"; font-size: 6.2pt; color: var(--mintdk); width: 17mm; flex: none; padding-top: .9mm; }
 .shots { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin-bottom: 1.5mm; }
 .shots img { width: 100%; image-rendering: pixelated; border: .6mm solid var(--navy); display: block; }
-.cap { font-size: 7.8pt; color: #5a6b80; margin-bottom: 3mm; }
+.cap { font-size: 8.3pt; color: #5a6b80; margin-bottom: 3mm; }
 .box { background: #eefbf5; border-left: 1.4mm solid var(--mint); padding: 3mm 4mm; }
-.box p { margin: 0; font-size: 9.6pt; }
+.box p { margin: 0; font-size: 10.5pt; }
 
 footer { flex:none; background: var(--navy); color: #fff; padding: 5mm 12mm; display: flex; align-items: center; gap: 7mm; margin-top: auto; }
 .qr { background: #fff; padding: 2.5mm; flex: none; }
@@ -65,15 +65,15 @@ footer { flex:none; background: var(--navy); color: #fff; padding: 5mm 12mm; dis
 
   <main>
     <section>
-      <p class="lead"><b>Luna Station</b> is a hobby project celebrating <b>60 years since Luna 9</b> made the first soft landing on the Moon in 1966. Built for the <b>Retro Computer Festival in Cambridge</b>, it reimagines Lunar Lander on a computer designed from scratch.</p>
+      <p class="lead"><b>Luna Station</b> is a hobby project celebrating the <b>60th anniversary of Luna 9&rsquo;s Moon landing</b>, created for the Retro Computer Festival in Cambridge.</p>
 
-      <h2>HOW TO PLAY</h2>
-      <p>Rotate the lander, fire the engine and touch down on a flat pad before the fuel runs out. Land too fast or at an angle and it&rsquo;s a crash. Narrow pads score <b>&times;2</b> or <b>&times;4</b> &mdash; if you dare.</p>
+      <h2>FIRST GAME</h2>
+      <p><b>Lunar Lander</b> is the console&rsquo;s first game. Rotate your spacecraft, fire the engine and land gently before the fuel runs out. Narrow pads score <b>&times;2</b> or <b>&times;4</b>, but land too fast or at an angle and you&rsquo;ll crash.</p>
 
       <h2>WHAT&rsquo;S INSIDE?</h2>
-      <p>There is no ready-made graphics chip and no operating system here. An <b>FPGA</b> is a chip full of blank logic that can be &ldquo;wired&rdquo; by software. We described a complete little computer in Verilog: a processor, memory, a video card and an SD-card reader &mdash; and the chip became that computer.</p>
+      <p>An <b>FPGA</b> is a chip whose circuits can be configured to make a custom computer. Inside Luna Station are a tiny processor, memory, a video engine and an SD-card reader &mdash; all described in hardware logic.</p>
 
-      <div class="box"><p>The game runs with just <b>8&nbsp;KB of RAM</b> &mdash; the same as an Atari&nbsp;400 from 1979 &mdash; and does all its physics with integer &ldquo;fixed-point&rdquo; maths, just like the classics.</p></div>
+      <div class="box"><p>The game runs with just <b>8&nbsp;KB of RAM</b> and uses integer &ldquo;fixed-point&rdquo; maths for its flight physics.</p></div>
     </section>
 
     <section>
@@ -85,16 +85,17 @@ footer { flex:none; background: var(--navy); color: #fff; padding: 5mm 12mm; dis
 
       <h2>TECH SPECS</h2>
       <ul class="spec">
-        <li><i>BOARD</i><span>Sipeed Tang Nano 9K &middot; Gowin GW1NR-9 FPGA, 8640 logic cells</span></li>
-        <li><i>CPU</i><span>PicoRV32 &mdash; an open-source <b>RISC-V</b> processor, 32-bit, 27&nbsp;MHz</span></li>
-        <li><i>VIDEO</i><span>HDMI 640&times;480 @ 60&nbsp;Hz generated in pure logic; lander sprite drawn in 32 rotations</span></li>
-        <li><i>STORAGE</i><span>Games load from an SD card (FAT) and can be updated over USB</span></li>
-        <li><i>SOUND</i><span>ESP32 synthesizer, six-voice music, I&sup2;S amplifier MAX98357A</span></li>
-        <li><i>TOOLS</i><span>Yosys, nextpnr, GCC; a 3D-printable Luna Station case design</span></li>
+        <li><i>BOARD</i><span>Sipeed Tang Nano 9K FPGA</span></li>
+        <li><i>CPU</i><span>RISC-V PicoRV32 &middot; 27&nbsp;MHz</span></li>
+        <li><i>VIDEO</i><span>HDMI 640&times;480 at 60&nbsp;Hz</span></li>
+        <li><i>GAMES</i><span>FAT SD card &middot; USB updates</span></li>
+        <li><i>SOUND</i><span>ESP32 &middot; MAX98357A amplifier</span></li>
+        <li><i>CONTROL</i><span>ESP-NOW wireless gamepads</span></li>
       </ul>
 
-      <h2>A TRIBUTE</h2>
-      <p style="margin-bottom:0">Leave the console idle and it remembers <b>Luna&nbsp;9</b> (1966), the first soft landing on the Moon, and <b>Apollo&nbsp;11</b> (1969), the first people to walk there.</p>
+      <h2>MOON FIRSTS</h2>
+      <p><b>Luna 9 &middot; 3 February 1966:</b> the first automatic soft landing of a spacecraft on the Moon.</p>
+      <p style="margin-bottom:0"><b>Apollo 11 &middot; 1969:</b> Neil Armstrong and Buzz Aldrin became the first people to walk on the Moon.</p>
     </section>
   </main>
 
